@@ -450,7 +450,7 @@ window.addEventListener('load', function() {
     var ponziContract = web3.eth.contract(abi);
 
     web3.eth.defaultAccount = web3.eth.accounts[0];
-    var contract = ponziContract.at('0xa613fde410e4f19712b36af15260e77bd1268070') // DO NOT SEND ETH TO THIS ADDRESS. IT'S THE FUCKING TESTNET
+    var contract = ponziContract.at('0xe908c5544cdcb8c0d3ca260f1540a78e7bd5a3f6') // DO NOT SEND ETH TO THIS ADDRESS. IT'S THE FUCKING TESTNET
     updateData(contract);
     
     // Now you can start your app & access web3 freely:
