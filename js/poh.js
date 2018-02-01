@@ -14,34 +14,25 @@ window.addEventListener('load', function() {
     let abi = [
         {
             "constant": true,
-            "inputs": [],
-            "name": "name",
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "allowance",
             "outputs": [
                 {
                     "name": "",
-                    "type": "string"
+                    "type": "uint256"
                 }
             ],
             "payable": false,
             "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "_spender",
-                    "type": "address"
-                },
-                {
-                    "name": "_value",
-                    "type": "uint256"
-                }
-            ],
-            "name": "approve",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -59,28 +50,6 @@ window.addEventListener('load', function() {
             "type": "function"
         },
         {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "_from",
-                    "type": "address"
-                },
-                {
-                    "name": "_to",
-                    "type": "address"
-                },
-                {
-                    "name": "_value",
-                    "type": "uint256"
-                }
-            ],
-            "name": "transferFrom",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
             "constant": true,
             "inputs": [
                 {
@@ -88,7 +57,7 @@ window.addEventListener('load', function() {
                     "type": "address"
                 }
             ],
-            "name": "balanceOfOld",
+            "name": "tokenBalance",
             "outputs": [
                 {
                     "name": "",
@@ -100,41 +69,13 @@ window.addEventListener('load', function() {
             "type": "function"
         },
         {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "tokenCount",
-                    "type": "uint256"
-                }
-            ],
-            "name": "withdraw",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [],
-            "name": "PonziTokenV3",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
             "constant": true,
             "inputs": [],
-            "name": "decimals",
+            "name": "symbol",
             "outputs": [
                 {
                     "name": "",
-                    "type": "uint8"
+                    "type": "string"
                 }
             ],
             "payable": false,
@@ -142,23 +83,9 @@ window.addEventListener('load', function() {
             "type": "function"
         },
         {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "to",
-                    "type": "address"
-                }
-            ],
-            "name": "withdrawOld",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
             "constant": true,
             "inputs": [],
-            "name": "sellPrice",
+            "name": "buyPrice",
             "outputs": [
                 {
                     "name": "",
@@ -175,13 +102,64 @@ window.addEventListener('load', function() {
                 {
                     "name": "ethervalue",
                     "type": "uint256"
+                },
+                {
+                    "name": "subvalue",
+                    "type": "uint256"
                 }
             ],
-            "name": "getTokensForEther",
+            "name": "calculateDividendTokens",
             "outputs": [
                 {
                     "name": "tokens",
                     "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "payouts",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "int256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "name",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "decimals",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint8"
                 }
             ],
             "payable": false,
@@ -227,121 +205,6 @@ window.addEventListener('load', function() {
             "type": "function"
         },
         {
-            "constant": false,
-            "inputs": [],
-            "name": "sellMyTokensDaddy",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "buyPrice",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "symbol",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "string"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [
-                {
-                    "name": "ethervalue",
-                    "type": "uint256"
-                },
-                {
-                    "name": "sub",
-                    "type": "uint256"
-                }
-            ],
-            "name": "getTokensForEther2",
-            "outputs": [
-                {
-                    "name": "tokens",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "_to",
-                    "type": "address"
-                },
-                {
-                    "name": "_value",
-                    "type": "uint256"
-                }
-            ],
-            "name": "transfer",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [],
-            "name": "reinvestDivies",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [],
-            "name": "getMeOutOfHere",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [],
-            "name": "fund",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "payable": true,
-            "stateMutability": "payable",
-            "type": "function"
-        },
-        {
             "constant": true,
             "inputs": [
                 {
@@ -363,10 +226,10 @@ window.addEventListener('load', function() {
         {
             "constant": true,
             "inputs": [],
-            "name": "reserve",
+            "name": "sellPrice",
             "outputs": [
                 {
-                    "name": "amount",
+                    "name": "",
                     "type": "uint256"
                 }
             ],
@@ -378,18 +241,14 @@ window.addEventListener('load', function() {
             "constant": true,
             "inputs": [
                 {
-                    "name": "",
-                    "type": "address"
-                },
-                {
-                    "name": "",
-                    "type": "address"
+                    "name": "ethervalue",
+                    "type": "uint256"
                 }
             ],
-            "name": "allowance",
+            "name": "getTokensForEther",
             "outputs": [
                 {
-                    "name": "",
+                    "name": "tokens",
                     "type": "uint256"
                 }
             ],
@@ -398,59 +257,80 @@ window.addEventListener('load', function() {
             "type": "function"
         },
         {
+            "constant": false,
+            "inputs": [],
+            "name": "reinvestDividends",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "address"
+                }
+            ],
+            "name": "withdrawOld",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "withdraw",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "sellMyTokens",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
             "payable": true,
             "stateMutability": "payable",
             "type": "fallback"
         },
         {
-            "anonymous": false,
-            "inputs": [
-                {
-                    "indexed": true,
-                    "name": "from",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "name": "to",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "name": "value",
-                    "type": "uint256"
-                }
-            ],
-            "name": "Transfer",
-            "type": "event"
+            "constant": false,
+            "inputs": [],
+            "name": "getMeOutOfHere",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
         },
         {
-            "anonymous": false,
-            "inputs": [
-                {
-                    "indexed": true,
-                    "name": "owner",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "name": "spender",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "name": "value",
-                    "type": "uint256"
-                }
-            ],
-            "name": "Approval",
-            "type": "event"
+            "constant": false,
+            "inputs": [],
+            "name": "fund",
+            "outputs": [],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
         }
     ]
     var ponziContract = web3.eth.contract(abi);
 
     web3.eth.defaultAccount = web3.eth.accounts[0];
-    var contract = ponziContract.at('0xe908c5544cdcb8c0d3ca260f1540a78e7bd5a3f6') // DO NOT SEND ETH TO THIS ADDRESS. IT'S THE FUCKING TESTNET
+    var contract = ponziContract.at('0x2c836b17fe8c2f127ee2a9320e8fa1585e24469f') // DO NOT SEND ETH TO THIS ADDRESS. IT'S THE FUCKING TESTNET
     updateData(contract);
     
     // Now you can start your app & access web3 freely:
