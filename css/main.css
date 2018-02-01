@@ -166,7 +166,7 @@ body {
 @media screen and (min-width: 960px) {
   .container {
     width: 100%;
-    max-width: 930px;
+    max-width: 1120px;
   }
 }
 @keyframes bgscroll {
@@ -250,7 +250,7 @@ body {
   background: transparent;
 }
 .cta:hover{
-  background-color:#F88A2F !important;
+  background-color:#486a7b !important;
   border:2px solid transparent;
 }
 .cta:focus {
@@ -262,7 +262,7 @@ h2,
 h5,
 h1 {
   font-weight:300;
-  color: orange;
+  color: #486a7b;
   	
 }
 h1 {
@@ -321,7 +321,7 @@ img {
   line-height: normal;
 }
 .header .logo a img {
-  width: 35px;
+  width: 55px;
 }
 .header .navigation {
   float: right;
@@ -338,7 +338,7 @@ img {
   text-transform:uppercase;
 }
 .header .navigation ul li a:hover{
-  color: #F88A2F;
+  color: #000000;
 }
 .header .align-center {
   height: 50px;
@@ -353,7 +353,7 @@ img {
   top: 0px;
 }
 .header.header-animate {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(59, 81, 93, 0.89);
   padding: 10px 0;
 }
 .middle-content {
@@ -396,14 +396,14 @@ img {
   font-size: 1.3em;
   margin: 0 auto;
 }
-.eos-features-main {
+.ep-features-main {
   padding: 20px 0 60px;
  background:white;	
 }
-.eos-features-main .features-description p:last-child {
+.ep-features-main .features-description p:last-child {
   margin-bottom: 20px;
 }
-.eos-features-main .features-box-main {
+.ep-features-main .features-box-main {
   margin: 0px 0 0;
 }
 
@@ -411,85 +411,87 @@ img {
   padding-left: 10px;
   padding-right: 10px;
 }
-.token-main .eos-features-main{
+.token-main .ep-features-main{
   padding:20px 0 0 ;
   font-family: 'Open Sans', sans-serif;
   border-top:none;
 }
-.token-main .eos-features-main .features-box-main {
+.token-main .ep-features-main .features-box-main {
   margin: 0;
 }
-.eos-features-main .features-box-main .flex-parent {
+.ep-features-main .features-box-main .flex-parent {
   margin-top: 0;
 }
-.token-main .eos-features-main .features-box-main .flex-parent{
+.token-main .ep-features-main .features-box-main .flex-parent{
   margin-top:0;
 }
-.eos-features-main .features-box-main h3 {
+.ep-features-main .features-box-main h3 {
   border-bottom: 1px solid #000;
   line-height: 0.1em;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04);
 }
-.eos-features-main .features-box-main h3 span {
+.ep-features-main .features-box-main h3 span {
   background-color: #1c1d21;
   padding: 0 15px;
 }
-.eos-features-main .features-box-main h4 {
+.ep-features-main .features-box-main h4 {
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.09em;
   font-weight:600;
 }
-.eos-features-main .features-box-main .line {
+.ep-features-main .features-box-main .line {
   height: 4px;
   width: 30px;
   margin-bottom: 20px;
   display: inline-block;
   background-color: #8991A5;
 }
-.eos-features-main .features-box-main .icon-main {
-  width: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 64px;
-  border-radius: 50%;
-  background-color: #12121B;
-  margin: 0 auto 20px;
+.ep-features-main .features-box-main .icon-main {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #486a7b;
+    margin: 0 auto 20px;
+    font-size: 39px;
+    color: white;
 }
-.eos-features-main .features-box-main .icon-main .icon-scalable {
+.ep-features-main .features-box-main .icon-main .icon-scalable {
   display: inline-block;
   width: 100%;
   height: 100%;
   background: url("../images/scalable-icon@2x.png") no-repeat;
   background-size: contain;
 }
-.eos-features-main .features-box-main .icon-main .icon-flexible {
+.ep-features-main .features-box-main .icon-main .icon-flexible {
   display: inline-block;
   width: 100%;
   height: 100%;
   background: url("../images/flexible-icon@2x.png") no-repeat;
   background-size: contain;
 }
-.eos-features-main .features-box-main .icon-main .icon-usable {
+.ep-features-main .features-box-main .icon-main .icon-usable {
   display: inline-block;
   width: 100%;
   height: 100%;
   background: url("../images/usable-icon@2x.png") no-repeat;
   background-size: contain;
 }
-.eos-features-main .features-box-main p {
+.ep-features-main .features-box-main p {
   font-size: 13px;
   color:#4f4f4f;
 }
-.eos-features-main .features-box-main .feat-more-info {
+.ep-features-main .features-box-main .feat-more-info {
   margin-top: 65px;
 }
-.eos-features-main .features-box-main .feat-more-info a {
+.ep-features-main .features-box-main .feat-more-info a {
   width:265px;
 }
-.eos-features-main .features-box-main .features-box a{
+.ep-features-main .features-box-main .features-box a{
   color: #F88A2F;
   font-size: 13px;
 }
@@ -510,11 +512,6 @@ img {
     color: white;
     outline: none;
 }
-
-
-
-
-
 
 .token-main .token-content {
   padding: 90px 0 50px;
@@ -1643,7 +1640,7 @@ div#privacy-policy div.content p {
   .middle-content h1 {
     margin: 45px 0 55px;
   }
-  .eos-features-main .features-box-main {
+  .ep-features-main .features-box-main {
     margin: 25px 0 0;
   }
   div[class*="col"] {
@@ -1777,10 +1774,10 @@ div#privacy-policy div.content p {
     width: 100%;
     margin-right: 0;
   }
-  .eos-features-main {
+  .ep-features-main {
     padding-top: 20px;
   }
-  .eos-features-main .features-box-main .feat-more-info {
+  .ep-features-main .features-box-main .feat-more-info {
     margin-top: 0;
   }
   .supporters-section .container h2 {
@@ -1836,14 +1833,12 @@ div#privacy-policy div.content p {
 .faq-main .faq-main-content .faq-header h2 {
   margin-bottom: 10px;
 }
-.faq-main .faq-main-content h4 {
-  font-family: 'HelveticaNeue';
-}
+
 .faq-main .faq-main-content p {
   font-size: 16px;
 }
 .faq-main .faq-main-content a {
-  color: #F88A2F;
+  color: #23ada2;
 }
 .faq-main .faq-main-content .sections {
   margin-bottom: 30px;
@@ -3731,7 +3726,7 @@ textarea#abi-inerface:focus{
     width: 100%;
     position: static;
   }
-  .eos-features-main .features-box-main .line{
+  .ep-features-main .features-box-main .line{
     opacity:0.10;
   }
   .resource-blocks img{
@@ -3816,7 +3811,7 @@ textarea#abi-inerface:focus{
     width:100%;
     left: 0;
   }
-  .eos-features-main .features-box-main p{
+  .ep-features-main .features-box-main p{
     padding:0 20px;
   }
   .current-sale .title{
@@ -3851,7 +3846,7 @@ textarea#abi-inerface:focus{
   .resource-blocks h5{
     height:auto;
   }
-  .eos-features-main{
+  .ep-features-main{
     background: url("../images/value_proportion_mobile.png") center center no-repeat;
     background-size: cover;
     margin-top: -40px;
@@ -3859,7 +3854,7 @@ textarea#abi-inerface:focus{
   .footer, .supporters-section{
     background-color: #111114;
   }
-  .token-main .eos-features-main{
+  .token-main .ep-features-main{
     background: none;
     margin:0
   }
