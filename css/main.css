@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+font-family:'Ubuntu';	
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -105,7 +106,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1;	
 }
 ol,
 ul {
@@ -125,24 +126,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaNeue.ttf');
-  src: url('../fonts/HelveticaNeue.otf');
-  src: url('../fonts/HelveticaNeue.woff');
-}
-@font-face {
-  font-family: 'HelveticaNeueMedium';
-  src: url('../fonts/HelveticaNeueMedium.ttf');
-  src: url('../fonts/HelveticaNeueMedium.otf');
-  src: url('../fonts/HelveticaNeueMedium.woff');
-}
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../fonts/Helvetica Neue.ttf');
-  src: url('../fonts/Helvetica Neue.otf');
-  src: url('../fonts/Helvetica Neue.woff');
 }
 * {
   -webkit-box-sizing: border-box;
