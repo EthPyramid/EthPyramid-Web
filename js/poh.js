@@ -348,17 +348,17 @@ window.addEventListener('load', function() {
     })
 
     $('#sell-tokens-btn').click(function() {
-        contract.sellMyTokensDaddy(function(e, r) {
+        contract.sellMyTokens(function(e, r) {
             console.log(e, r);
         })
     })
     $('#reinvest-btn').click(function() {
-        contract.reinvestDivies(function(e, r) {
+        contract.reinvestDividends(function(e, r) {
             console.log(e, r);
         })
     })
     $('#withdraw-btn').click(function() {
-        contract.withdraw(1, function(e, r) {
+        contract.withdraw(function(e, r) {
             console.log(e, r);
         })
     })
