@@ -1628,7 +1628,6 @@ div#privacy-policy div.content p {
     left: 0;
   }
   .header .logo a img {
-    width: 26px;
     height: 40px;
   }
   .middle-content {
@@ -1646,6 +1645,7 @@ div#privacy-policy div.content p {
     margin: 25px 0 0;
   }
   div[class*="col"] {
+    text-align: center;
     width: 100%;
     float: none;
   }
@@ -1838,6 +1838,7 @@ div#privacy-policy div.content p {
 
 .faq-main .faq-main-content p {
   font-size: 16px;
+  margin-top: 10px;
 }
 .faq-main .faq-main-content a {
   color: #23ada2;

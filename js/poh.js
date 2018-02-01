@@ -381,6 +381,9 @@ function updateData(contract) {
     }
     contract.balanceOf(web3.eth.defaultAccount, function(e, r) {
         $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " ETP");
+        contract.getEtherForTokens(r, function(e, r) {
+            $(".current-sale .poh-value").text(convertWeiToEth(r * 0.9).toFixed(4) + " ETH");
+        })
     })
     contract.buyPrice(function(e, r) {
         let buyPrice = (1/(convertWeiToEth(r) * .9)/1000000).toFixed(6)
@@ -400,6 +403,5 @@ function updateData(contract) {
     web3.eth.getBalance(contract.address, function(e, r) {
         $(".current-distribution-period").text(convertWeiToEth(r).toFixed(4));
     })
-
     
 }
