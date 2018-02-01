@@ -321,7 +321,7 @@ img {
   line-height: normal;
 }
 .header .logo a img {
-  width: 55px;
+  height: 55px;
 }
 .header .navigation {
   float: right;
@@ -372,7 +372,9 @@ img {
   object-fit: contain;
   max-height: 50vh;
 }
-
+.faq-main-content h4{
+	color: white;
+}
 .middle-content img.eos-logo {
   width: 235px;
 }
