@@ -821,6 +821,10 @@ textarea#abi-inerface{
   border: 1px solid transparent;
   color: #FFFFFF;
 }
+.token-bg{
+	background: #2b3134;
+	 margin-bottom:30px;
+}
 .subscriber-section input[type="text"]:focus,
 .subscriber-section input[type="email"]:focus {
   outline: none;
