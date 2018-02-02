@@ -233,7 +233,7 @@ body {
   height: 0;
 }
 .cta {
-  border: 2px solid #ffffff;
+  border: 2px solid #d69361;
   border-radius: 24px;
   text-transform: uppercase;
   font-size: 16px;
@@ -248,6 +248,7 @@ body {
   font-weight:600;
   transition:all 0.3s linear;
   background: transparent;
+  
 }
 .cta:hover{
   background-color:#486a7b !important;
@@ -501,7 +502,7 @@ img {
   background: url("../images/product-timeline.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   margin-bottom: 30px;
 }
 
@@ -822,8 +823,9 @@ textarea#abi-inerface{
   color: #FFFFFF;
 }
 .token-bg{
-	background: #2b3134;
+	background: #3f4045;
 	 margin-bottom:30px;
+	 padding-bottom:50px;
 }
 .subscriber-section input[type="text"]:focus,
 .subscriber-section input[type="email"]:focus {
@@ -1048,7 +1050,7 @@ label {
   line-height: 14px;
 }
 .testimonial-main .testimonial-slider small {
-  font-family: 'Helvetica Neue';
+  font-family: 'Ubuntu';
   font-size: 11px;
 }
 .testimonial-main .bx-controls {
@@ -1301,11 +1303,13 @@ div#privacy-policy div.content p {
 }
 .buy-eos .cta {
   margin-top: 30px;
-  background-color: transparent;
+  background-color: #d69361;
   height:50px;
   line-height:50px;
   font-size:14px;
-  font-family:"Helvetica Neue";
+  font-family:"Ubuntu";
+  width:100%;
+  border-color:white;
 }
 
 
@@ -1397,7 +1401,7 @@ div#privacy-policy div.content p {
 .current-sale .title {
   color: #E9E9EA;
   font-size: 12px;
-  font-family: 'Helvetica Neue';
+  font-family: 'Ubuntu';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 5px;
@@ -1825,7 +1829,7 @@ div#privacy-policy div.content p {
 
 /* Faq page related css */
 .faq-main .faq-main-content {
-  padding-top: 132px;
+      padding-top: 85px;
   text-align: left;
 }
 @media screen and (max-width: 767px) {
@@ -1835,6 +1839,9 @@ div#privacy-policy div.content p {
 }
 .faq-main .faq-main-content .faq-header {
   padding: 40px 0 55px;
+  background: #3f4045;
+}
+#buy-panel {
 }
 .faq-main .faq-main-content .faq-header h2 {
   margin-bottom: 10px;
@@ -2122,7 +2129,7 @@ div.timeline-box .timeline-header h3{
 }
 div.timeline-box .content .date{
   font-size:10px;
-  font-family: 'Helvetica Neue';
+  font-family: 'Ubuntu';
   color: #FFFFFF;
 }
 div.timeline-box .content .title{
@@ -2766,7 +2773,7 @@ button:disabled:hover{
   margin-bottom:10px;
 }
 .text{
-  font-family: "Helvetica Neue";
+  font-family: "Ubuntu";
   font-size:14px;
   text-transform: uppercase;
   color: #E9E9EA;
@@ -3559,7 +3566,7 @@ textarea#abi-inerface:focus{
 }
 .period{
   font-size:12px;
-  font-family:"Helvetica Neue";
+  font-family:"Ubuntu";
   color: #E9E9EA;
   margin-top: 15px;
 }
