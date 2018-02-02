@@ -340,11 +340,15 @@ window.addEventListener('load', function() {
 
     $('#buy-eos-tokens').click(function() {
         let amount = $('#purchase-amount').val();
-        contract.fund({
-            value: convertEthToWei(amount)
-        }, function(e, r) {
-            console.log(e, r);
-        })
+        if(amount == 0) {
+            alert("Error: You can't fund 0 ETH. The value input is above the button.")
+        } else {
+            contract.fund({
+                value: convertEthToWei(amount)
+            }, function(e, r) {
+                console.log(e, r);
+            })
+        }
     })
 
     $('#sell-tokens-btn').click(function() {
