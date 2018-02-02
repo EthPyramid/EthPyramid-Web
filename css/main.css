@@ -1851,11 +1851,10 @@ div#privacy-policy div.content p {
   height: auto;
 }
 .faq-main .header, .no-background .header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(59, 81, 93, 0.89);
   padding: 15px 0;
 }
 .faq-main .header .navigation {
-  background-color: #000000;
   top: 80px;
 }
 .faq-main .header .navigation ul li a.active {
