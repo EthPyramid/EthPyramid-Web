@@ -4893,6 +4893,9 @@ input.contract-address, .copy-btn{
   .schedule-page-main .container{
     padding:0 30px;
   }
+  .socialBits{
+	  display:none;
+  }
   .schedule-page-main .form-group-main{
     display: block;
   }
