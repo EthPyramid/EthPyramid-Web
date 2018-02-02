@@ -330,7 +330,7 @@ window.addEventListener('load', function() {
     var ponziContract = web3.eth.contract(abi);
 
     web3.eth.defaultAccount = web3.eth.accounts[0];
-    var contract = ponziContract.at('0x2c836b17fe8c2f127ee2a9320e8fa1585e24469f') // DO NOT SEND ETH TO THIS ADDRESS. IT'S THE FUCKING TESTNET
+    var contract = ponziContract.at('0x55683101487e5530c694d9041d8c1997cc4295a5') // DO NOT SEND ETH TO THIS ADDRESS. IT'S THE FUCKING TESTNET
     updateData(contract);
     
     // Now you can start your app & access web3 freely:
@@ -362,6 +362,22 @@ window.addEventListener('load', function() {
             console.log(e, r);
         })
     })
+
+    $('#sell-tokens-btn-m').click(function() {
+        contract.sellMyTokens(function(e, r) {
+            console.log(e, r);
+        })
+    })
+    $('#reinvest-btn-m').click(function() {
+        contract.reinvestDividends(function(e, r) {
+            console.log(e, r);
+        })
+    })
+    $('#withdraw-btn-m').click(function() {
+        contract.withdraw(function(e, r) {
+            console.log(e, r);
+        })
+    })
 })
 
 function convertEthToWei(e) {
@@ -380,7 +396,7 @@ function updateData(contract) {
         return
     }
     contract.balanceOf(web3.eth.defaultAccount, function(e, r) {
-        $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " ETP");
+        $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " EPY");
         contract.getEtherForTokens(r, function(e, r) {
             $(".current-sale .poh-value").text(convertWeiToEth(r * 0.9).toFixed(4) + " ETH");
         })
