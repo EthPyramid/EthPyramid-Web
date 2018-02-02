@@ -514,6 +514,9 @@ img {
     width: 100%;
     color: white;
     outline: none;
+	font-family: 'ubuntu';
+    font-size: 16px;
+    text-align: center;
 }
 
 .token-main .token-content {
@@ -1299,7 +1302,7 @@ div#privacy-policy div.content p {
 }
 .buy-eos {
   padding:40px 35px;
-  background: rgba(14,14,15,0.68);
+  background: rgba(14, 14, 15, 0.34);
 }
 .buy-eos .cta {
   margin-top: 30px;
