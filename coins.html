@@ -181,52 +181,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <script type="text/javascript">
-                                        $( document ).ready(function() {
-                                            (function getSalesStats() {
-                                                $.getJSON( "https://eos.io/eos-sales-statistic.php" ).always(function (data) {
-                                                    if(data && typeof data === "object") {
-                                                        try {
-                                                            var firstSaleWindow = data.find(function (x) {
-                                                                return x.id === 0;
-                                                            });
-                        
-                                                            var currentTime = moment('2018-01-30T03:05:11.000Z');
-                                                            var thisSaleWindow = data.find(function (x) {
-                                                                x.begins = x.begins ? x.begins : 0;
-                                                                return currentTime.isSameOrAfter(moment(x.begins)) && currentTime.isBefore(moment(x.ends));
-                                                            });
-                                                            var totalDistributed = data.filter(function (x) {
-                                                                return moment(x.ends).isSameOrBefore(currentTime);
-                                                            }).reduce(function (total, x) {
-                                                                return total + parseFloat(x.createOnDay);
-                                                            }, 0);
-                        
-                                                            // Populate data
-                                                            $('.current-sale .eos-for-sale').text(Math.floor(thisSaleWindow.createOnDay).toLocaleString());
-                                                            $('.current-sale .eth-received').text(Math.floor(thisSaleWindow.dailyTotal).toLocaleString());
-                                                            $(".current-distribution-period").text(thisSaleWindow.id);
-                                                            updateProgressBar(totalDistributed);
-                        
-                                                            // Sale Window End Countdown
-                                                            if( !isNaN(Date.parse(thisSaleWindow.ends)) ) {
-                                                                $('#phase-countdown').countdown( new Date(1517281511000), moment(thisSaleWindow.ends).toDate(), function(event) {
-                                                                    $(this).html(event.strftime('%D:%H:%M:%S'));
-                                                                }).on('finish.countdown', function(event) {
-                                                                    // Reload The Page
-                                                                    console.log("Reload");
-                                                                    setTimeout( function() { top.location.reload(true) }, 1000 * 3);
-                                                                });
-                                                            }
-                                                        } catch(e) {
-                                                            console.log("Exception", e);
-                                                        }
-                                                        setTimeout(function() { getSalesStats() }, 120000);
-                                                    }
-                                                });
-                                            })();
-                                        });
-                                        </script>
                                                     </div>
                                     <div id="metamask-not-found" style="padding: 15px; display: none">
                                                     <h2 class="float-left">MetaMask Not Found</h2></br>
