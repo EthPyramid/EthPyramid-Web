@@ -1868,6 +1868,13 @@ div#privacy-policy div.content p {
   background: rgba(59, 81, 93, 0.89);
   padding: 15px 0;
 }
+.socialBits {
+    position: absolute;
+    right: 20px;
+    font-size: 33px;
+    color: white;
+    margin-top: 14px;
+}
 .faq-main .header .navigation {
   top: 80px;
 }
