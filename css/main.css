@@ -3343,9 +3343,12 @@ textarea#abi-inerface:focus{
   margin:0 10px;
 }
 .traffic-message{
-  background-color: rgba(14,14,15,0.68);
-  border-radius: 1px;
-  font-size:11px;
+    background-color: rgb(56, 75, 87);
+    border-radius: 1px;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 @media screen and (max-width: 767px){
   .traffic-message{
