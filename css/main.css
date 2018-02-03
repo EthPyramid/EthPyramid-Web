@@ -3768,12 +3768,12 @@ textarea#abi-inerface:focus{
     display: block;
   }
 }
-@media screen and (max-width: 1366px){
+
   .middle-content .main-logo-wrapper img{
     width: 240px;
   }
 
-}
+
 
 @media screen and (max-width: 767px){
   .visible-xs{
