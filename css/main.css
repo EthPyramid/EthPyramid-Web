@@ -1412,7 +1412,7 @@ div#privacy-policy div.content p {
     background: #4c4e53;
     margin: 10px;
     padding: 10px;
-    min-height: 96px;
+    min-height: 107px;
 }
 .PriceBox p {
     color: #d69361!important;
@@ -1868,7 +1868,12 @@ div#privacy-policy div.content p {
 
 .faq-main .faq-main-content p {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 3px;
+}
+.usdprice {
+    color: #b7b7b7;
+    font-size: 13px;
+    text-align: center;
 }
 .faq-main .faq-main-content a {
   color: #23ada2;
