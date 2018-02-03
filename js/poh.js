@@ -414,24 +414,24 @@ function updateData(contract) {
         $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " EPY");
         contract.getEtherForTokens(r, function(e, r) {
             $(".current-sale .poh-value").text(convertWeiToEth(r * 0.9).toFixed(4) + " ETH");
-			$(".current-sale .usd-value").text((convertWeiToEth(r * 0.9) * ethPrice).toFixed(4) + " USD");
+			$(".current-sale .usd-value").text("($"+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(2) + " USD)");
         })
     })
     contract.buyPrice(function(e, r) {
         let buyPrice = (1/(convertWeiToEth(r) * .9)/1000000);
         $('.current-sale .poh-buy').text(buyPrice.toFixed(6) + " ETH");
-		$(".current-sale .usd-buy").text((buyPrice * ethPrice).toFixed(6) + " USD");        
+		$(".current-sale .usd-buy").text("($"+(buyPrice * ethPrice).toFixed(2) + " USD)");        
     })
 
     contract.sellPrice(function(e, r) {
         let sellPrice = convertWeiToEth(r);
         $('.current-sale .poh-sell').text(sellPrice.toFixed(6) + " ETH");
-		$(".current-sale .usd-sell").text((sellPrice * ethPrice).toFixed(4) + " USD");
+		$(".current-sale .usd-sell").text("($"+(sellPrice * ethPrice).toFixed(2) + " USD)");
     })
 
     contract.dividends(web3.eth.defaultAccount, function(e, r) {
         $('.current-sale .poh-div').text(convertWeiToEth(r).toFixed(4) + " ETH");
-		$(".current-sale .usd-div").text((convertWeiToEth(r) * ethPrice).toFixed(6) + " USD");
+		$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
     } )
 
     web3.eth.getBalance(contract.address, function(e, r) {
