@@ -1,3 +1,5 @@
+var contractAddress = '0x2Fa0ac498D01632f959D3C18E38f4390B005e200';
+
 window.addEventListener('load', function() {
 
     // Checking if Web3 has been injected by the browser (Mist/MetaMask)
@@ -330,7 +332,7 @@ window.addEventListener('load', function() {
     var ponziContract = web3.eth.contract(abi);
 
     web3.eth.defaultAccount = web3.eth.accounts[0];
-    var contract = ponziContract.at('0x2Fa0ac498D01632f959D3C18E38f4390B005e200')
+    var contract = ponziContract.at(contactAddress)
     updateData(contract);
     
     // Now you can start your app & access web3 freely:
