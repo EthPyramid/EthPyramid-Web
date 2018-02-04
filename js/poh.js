@@ -407,10 +407,12 @@ function updateEthPrice() {
 	});
 }
 
-$('#currency').change( function(){
-    currency = $( this ).val();
-    updateEthPrice();
-});
+$( function(){
+    $('#currency').change( function(){
+        currency = $( this ).val();
+        updateEthPrice();
+    });
+})
 
 updateEthPrice();
 
