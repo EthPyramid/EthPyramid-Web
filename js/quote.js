@@ -9,7 +9,7 @@ var quotes = [
 	'What better place to put your childs\' college fund?.',
 	'Just like social security. But slightly safer.',
 	'If your money is in here, it can\'t get funneled to ISIS.',
-	'Powered by beautiful, clean coal',
+	'Powered by beautiful, clean coal.',
 	'Now mineable in Minecraft.',
 	'What the fuck else are you going to do?',
 	'Press ffffffffffffffffffffffffffffffffffff to donate respects (and receive ether).',
@@ -36,7 +36,7 @@ var quotes = [
 	'Great team, amazing team. I worked with team on many such projects! - Vitalik Skelly Money',
 	'You don\'t understand any of this.',
 	'Don\'t lie, we know you haven\'t read the smart contract.',
-	'what\'s a smart contract?',
+	'What\'s a smart contract?',
 	'Great team, good roadmap, big sneks.',
 	'Where the backdoor is in the front.',
 	'Micro-dolphins welcome too.',
@@ -54,7 +54,9 @@ var quotes = [
 	'The world is not anymore the way it used to be! Mmmm, no, no, no!',
 	'It\'s a reverse funnel system!',
 	'You\'re like, a berry salesman now?',
-	'Some people say it\'s better than busting a nut.'
+	'Some people say it\'s better than busting a nut.',
+	'Ain\'t nothing like original flavor.',
+	'Here lies Ponzibot. Rest in peace.'
 ]
 
 function newQuote() {
