@@ -38,4 +38,10 @@
     </li>
   {% endif %}
 
+  {% if site.social.twitter %}
+    <li>
+      <a title="{{ site.social.twitter }} on Twitter" href="{{ site.social.twitter | relative_url }}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    </li>
+  {% endif %}
+
 </ul>

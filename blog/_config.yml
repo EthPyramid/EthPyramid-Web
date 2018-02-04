@@ -19,13 +19,20 @@ name: EthPyramid Blog
 description: >- # this means to ignore newlines until "baseurl:"
         Official blog for EthPyramid
 baseurl: "" # the subpath of your site, e.g. /blog
+
 url: "https://blog.ethpyramid.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ethpyramid
-#github_username:  jekyll
+
+share:
+        facebook: true
+        twitter: true
+        gplus: true
+
+social:
+        twitter: ethpyramid
 
 # Build settings
 markdown: kramdown
-theme: minima
+
 plugins:
   - jekyll-feed
 
