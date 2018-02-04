@@ -396,15 +396,21 @@ function convertWeiToEth(e) {
 
 var ethPrice = 0;
 var currency = 'USD';
+var timer = null;
 
 function updateEthPrice() {
-    currency = $( '#currency' ).val();
+    clearTimeout(timer);
 	$.getJSON( 'https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=' + currency, function( result ) {
 		var eth = result[0];
 		ethPrice = parseFloat( eth['price_' + currency.toLowerCase()] );
-		setTimeout( updateEthPrice, 10000 );
+		timer = setTimeout( updateEthPrice, 10000 );
 	});
 }
+
+$('#currency').change( function(){
+    currency = $( this ).val();
+    updateEthPrice();
+});
 
 updateEthPrice();
 
