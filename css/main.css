@@ -1465,10 +1465,10 @@ div#privacy-policy div.content p {
   color: #FFFFFF;
 }
 .current-sale .count.up{
-  color: green;
+  color: #80e080;
 }
 .current-sale .count.down{
-  color: red;
+  color: #e08080;
 }
 .current-sale .eth-received{
   text-align: center;
