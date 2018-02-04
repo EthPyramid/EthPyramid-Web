@@ -423,15 +423,15 @@ function updateData(contract) {
 	    if( tokenBalance !== 0 ){
 		    if( bal > tokenBalance ){
                         $(".current-sale .poh-value").addClass('up').removeClass('down');
-                        setTimeout( 2000, function() {
+                        setTimeout( function() {
 				$(".current-sale .poh-value").removeClass('up');
-			});
+			}, 2000);
 		    }
 		    else if( bal < tokenBalance ){
                         $(".current-sale .poh-value").addClass('down').removeClass('up');
-                        setTimeout( 2000, function() {
+                        setTimeout( function() {
 				$(".current-sale .poh-value").removeClass('down');
-			});
+			}, 2000);
 		    }
 	    }
 	    tokenBalance = bal;
