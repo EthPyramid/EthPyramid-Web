@@ -89,7 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-font-family:'Ubuntu';	
+font-family:'Ubuntu';
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -106,7 +106,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;	
+  line-height: 1;
 }
 ol,
 ul {
@@ -248,7 +248,7 @@ body {
   font-weight:600;
   transition:all 0.3s linear;
   background: transparent;
-  
+
 }
 .cta:hover{
   background-color:#486a7b !important;
@@ -264,7 +264,7 @@ h5,
 h1 {
   font-weight:300;
   color: #486a7b;
-  	
+
 }
 h1 {
   font-size: 43px;
@@ -417,7 +417,7 @@ img {
 }
 .ep-features-main {
   padding: 20px 0 60px;
- background:white;	
+ background:white;
 }
 .ep-features-main .features-description p:last-child {
   margin-bottom: 20px;
@@ -1229,6 +1229,29 @@ div#privacy-policy div.content p {
 }
 #instructions .container{
   padding:0;
+}
+#token-sale.chat .outer-container{
+ width: 1200px;
+  margin: 0 auto;
+}
+#token-sale.nochat .outer-container{
+  width: 970px;
+  margin: 0 auto;
+}
+#token-sale.chat .container{
+  width: 940px;
+  float: left;
+  margin-right: 20px;
+}
+#token-sale.nochat .container{
+  width: 970px;
+}
+#token-sale.nochat .chat-box{
+    display: none;
+}
+#token-sale.chat .chat-box{
+  width: 200px;
+  float: right;
 }
 .modal .modal-header {
   background: #000;
@@ -3416,7 +3439,7 @@ textarea#abi-inerface:focus{
     margin-bottom: 20px;
 	    margin-left: 10px;
     margin-right: 10px;
-	
+
 	    width: 100%;
     margin-top: 30px;
 }
