@@ -242,6 +242,7 @@ nav a {
   font-family: Ubuntu;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+  color: #ffffff;
 }
 nav.navbar {
   -webkit-transition: all 0.7s ease;
@@ -252,8 +253,7 @@ nav.navbar.shrink {
 }
 .navbar-brand {
   font-size: 30px;
-  color: $accent-color;
-
+  color: #ffffff;
 }
 nav.shrink a {
   padding-top: 10px !important;
@@ -277,6 +277,7 @@ nav.shrink .navbar-toggle {
 }
 nav.navbar-inverse {
   background: #374b56;
+  border: 0;
 }
 
 //********************************************************

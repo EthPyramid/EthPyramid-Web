@@ -188,7 +188,8 @@ nav a {
   font-size: 18px;
   font-family: Ubuntu;
   -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease; }
+  transition: all 0.7s ease;
+  color: #ffffff; }
 
 nav.navbar {
   -webkit-transition: all 0.7s ease;
@@ -199,7 +200,7 @@ nav.navbar.shrink {
 
 .navbar-brand {
   font-size: 30px;
-  color: #d69361; }
+  color: #ffffff; }
 
 nav.shrink a {
   padding-top: 10px !important;
@@ -222,7 +223,8 @@ nav.shrink .navbar-toggle {
   margin: 8px 15px 8px 0; }
 
 nav.navbar-inverse {
-  background: #374b56; }
+  background: #374b56;
+  border: 0; }
 
 .footer {
   text-align: center; }
