@@ -415,7 +415,8 @@ $( function(){
 
     var chaton = false;
 
-    $('#chat-toggle').click( function(){
+    $('#chat-toggle').click( function(e){
+        e.preventDefault();
         if( chaton ){
             $('#token-sale').removeClass('nochat').addClass('chat');
         } else {

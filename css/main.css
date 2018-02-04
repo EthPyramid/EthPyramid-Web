@@ -1238,6 +1238,9 @@ div#privacy-policy div.content p {
   width: 970px;
   margin: 0 auto;
 }
+#token-sale #chat-toggle {
+  margin-left: 5px;
+}
 #token-sale.chat .container{
   width: 940px;
   float: left;
