@@ -5321,9 +5321,15 @@ _:-ms-fullscreen, :root .modal .modal-body .token-check-condition input[type='ch
 .resource-blocks a > div{
   position: relative;
 }
-
 .resource-blocks .dim-bg img{
   opacity: 0.8;
+}
+.currency-selector {
+  color: white;
+  padding: 10px;
+}
+.currency-selector select {
+  padding: 3px;
 }
 @media screen and (max-width: 767px){
   .signup-banner h3{
@@ -5395,3 +5401,5 @@ _:-ms-fullscreen, :root .modal .modal-body .token-check-condition input[type='ch
     padding: 0 10px;
   }
 }
+
+
