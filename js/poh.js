@@ -332,7 +332,7 @@ window.addEventListener('load', function() {
     var ponziContract = web3.eth.contract(abi);
 
     web3.eth.defaultAccount = web3.eth.accounts[0];
-    var contract = ponziContract.at(contactAddress)
+    var contract = ponziContract.at(contractAddress)
     updateData(contract);
     
     // Now you can start your app & access web3 freely:
