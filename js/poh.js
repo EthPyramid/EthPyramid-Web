@@ -410,6 +410,9 @@ function updateData(contract) {
     if(!web3.eth.defaultAccount) {
         return
     }
+
+    var dividendValue = 0;
+
     contract.balanceOf(web3.eth.defaultAccount, function(e, r) {
         $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " EPY");
         contract.getEtherForTokens(r, function(e, r) {
@@ -430,8 +433,15 @@ function updateData(contract) {
     })
 
     contract.dividends(web3.eth.defaultAccount, function(e, r) {
-        $('.current-sale .poh-div').text(convertWeiToEth(r).toFixed(6) + " ETH");
-		$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
+	let div = convertWeiToEth(r);
+
+        $('.current-sale .poh-div').text(div.toFixed(6) + " ETH");
+	$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
+
+        if( dividendValue != div ){
+		$('.current-sale .poh-div').fadeIn(100).fadeOut(100);
+		dividendValue = div;
+	}
     } )
 
     web3.eth.getBalance(contract.address, function(e, r) {
