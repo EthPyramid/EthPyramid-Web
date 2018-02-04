@@ -1,7 +1,7 @@
 body {
   padding-top: 80px;
   color: #dddddd;
-  background: #292929 url(pics/background/random-grey-variations.png); }
+  background: #374b56; }
 
 .well {
   background-color: #444;
@@ -47,7 +47,7 @@ blockquote {
   font-size: 1em; }
 
 a {
-  color: #3CA2A2; }
+  color: #d69361; }
 
 ul.social-media {
   text-align: center;
@@ -65,7 +65,7 @@ ul.social-media {
     display: inline-block;
     color: white; }
     ul.social-media li > a:hover {
-      color: #3CA2A2; }
+      color: #d69361; }
 
 .share-bar {
   text-align: right; }
@@ -199,7 +199,7 @@ nav.navbar.shrink {
 
 .navbar-brand {
   font-size: 30px;
-  color: #3CA2A2; }
+  color: #d69361; }
 
 nav.shrink a {
   padding-top: 10px !important;
