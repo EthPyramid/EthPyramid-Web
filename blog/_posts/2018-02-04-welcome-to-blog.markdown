@@ -28,7 +28,7 @@ As many know, our main developer dropped 5 eth in to get the pyramid started, wi
 
 The initial 5 eth(+5 eth at launch) put in cashed out all tokens - and to prove our unshaken confidence in the systems long-term potential has reinvested 10eth after. These “sold” tokens were burned and as a result everybody remaining with their steady hands afterward had an even greater share of the market than before. If you're curious, you can check it all out here;
 
-https://etherscan.io/address/0x99c4c67819204b89ac776627ea4c2d6776cb7641#internaltx
+<https://etherscan.io/address/0x99c4c67819204b89ac776627ea4c2d6776cb7641#internaltx>
 
 ## Even more for all – spread the love!
 
@@ -37,41 +37,41 @@ As we knew would happen, a few foolishly thought “the end” was nigh- but our
 
 ## Community update: tools and resources
 
-We have an amazing community – come and see for yourself:  https://discord.gg/hrmmv4Y
+We have an amazing community – come and see for yourself:  <https://discord.gg/hrmmv4Y>
 
 ### Social media: 
 
-We also have a regularly posting twitter. ( https://twitter.com/ethpyramid) Feel free to help spread the word using our hashtags. 
+We also have a regularly posting twitter. ( <https://twitter.com/ethpyramid> ) Feel free to help spread the word using our hashtags. 
 
 ### Ethpyramid contract Mythil test results:
 
 As recent events have indicated, many people are trying to (and have recently succeeded, for some contracts) exploit certain vulnerabilities unnecessarily left in contracts. Rest assured that our wonderful dev team has solved all of these - as promised: 
-(https://www.reddit.com/r/ethpyramid/comments/7uqh24/exploit_analysis_results_ethpyramid_smart_contract/)
+(<https://www.reddit.com/r/ethpyramid/comments/7uqh24/exploit_analysis_results_ethpyramid_smart_contract/>)
 
 ### PoWHChart: Now with live price chart for EthPyramid as well!
 
 The wonderful dev at powhchart.com has added EthPyr functionality here:
-https://powhchart.com/  (credits to:  /u/JuiceInNuggets) 
+<https://powhchart.com/>  (credits to:  /u/JuiceInNuggets) 
 
-You can also follow the twitter bot which gives live updates every 10 minutes: https://twitter.com/PoWHCoinCharts
+You can also follow the twitter bot which gives live updates every 10 minutes: <https://twitter.com/PoWHCoinCharts>
 
 We also have some more stats you may wish to look at, check out historical balance, price, supply, and number of transactions:
 
-https://powhcoin.azurewebsites.net/ (credits to: /u/i_am_new_to_reddit)
+<https://powhcoin.azurewebsites.net/> (credits to: /u/i_am_new_to_reddit)
 
 Check us out on reddit itself here:
-https://www.reddit.com/r/ethpyramid/
+<https://www.reddit.com/r/ethpyramid/>
 
 If you can contribute to the development of the public grassroots user community, please reach out to the moderator of this subreddit. We’d like to stay away from any control over any community (other than our discord for obvious reasons) but we know this community has some talented people that want to contribute!
 Another unofficial/unaffiliated but interesting project related to ours;
 
 This project, which searches etherscan.io and aggregates all identical contracts and provides a comparison and a back-up gui interface to interact with. While we do not recommend participating in any pyramid (even our own) it can't hurt to bookmark this as a backup!  
 
-http://scam.funsite.cz/yolo.html 
+<http://scam.funsite.cz/yolo.html>
 
 And finally, the still one and ONLY official site for EthPyramid – don't be fooled by scammers or other highwaymen and their hijinks!
 
-https://ethpyramid.com
+<https://ethpyramid.com>
 
 ### So what’s next for the EthPyramid? 
 
@@ -81,7 +81,7 @@ From here on we’ll be looking to continue to update https://ethpyramid.com for
 
 There’s already some great things in the works – tools, web design improvements, translations and community growth all; and expanding progress in fronts will play a vital role in the continued growth of the community. If you have suggestions for any further developments, please communicate with us and the community in the #dev-chat channel on our discord server – link again here for your convenience. 
 
-https://discord.gg/hrmmv4Y 
+<https://discord.gg/hrmmv4Y>
 
 We hope you've profited so far and have steadily grown more confident in the system! We know it works and we hope soon more and more people will see this for themselves. As always, don't put in anything you're not afraid to lose – we know there's a very good chance you'll do extremely well (especially now that the price of Ethereum itself is bouncing back) but either way we can most certainly promise one hell of a fun ride!  We'll do our very best to answer any and all questions you might have. Stay tuned for more, and in the meantime, stay safe, play responsibly and have a great rest of the weekend.
 
