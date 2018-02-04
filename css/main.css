@@ -1463,12 +1463,15 @@ div#privacy-policy div.content p {
   font-weight: 700;
   font-size: 30px;
   color: #FFFFFF;
+  transition: color 3s ease;
 }
 .current-sale .count.up{
   color: #80e080;
+  transition: color 0s ease;
 }
 .current-sale .count.down{
   color: #e08080;
+  transition: color 0s ease;
 }
 .current-sale .eth-received{
   text-align: center;
