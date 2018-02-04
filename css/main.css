@@ -1464,6 +1464,12 @@ div#privacy-policy div.content p {
   font-size: 30px;
   color: #FFFFFF;
 }
+.current-sale .count.up{
+  color: green;
+}
+.current-sale .count.down{
+  color: red;
+}
 .current-sale .eth-received{
   text-align: center;
 }

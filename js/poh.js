@@ -412,14 +412,26 @@ function updateData(contract) {
     }
 
     var dividendValue = 0;
+    var tokenBalance = 0;
 
     contract.balanceOf(web3.eth.defaultAccount, function(e, r) {
         $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " EPY");
         contract.getEtherForTokens(r, function(e, r) {
-            $(".current-sale .poh-value").text(convertWeiToEth(r * 0.9).toFixed(4) + " ETH");
-			$(".current-sale .usd-value").text("($"+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(2) + " USD)");
+	    let bal = convertWeiToEth(r*0.9);
+            $(".current-sale .poh-value").text(bal.toFixed(4) + " ETH");
+	    $(".current-sale .usd-value").text("($"+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(2) + " USD)");
+	    if( tokenBalance !== 0 ){
+		    if( bal > tokenBalance ){
+                        $(".current-sale .poh-value").addClass('up').removeClass('down');
+		    }
+		    else if( bal < tokenBalance ){
+                        $(".current-sale .poh-value").addClass('down').removeClass('up');
+		    }
+	    }
+	    tokenBalance = bal;
         })
     })
+
     contract.buyPrice(function(e, r) {
         let buyPrice = (1/(convertWeiToEth(r) * .9)/1000000);
         $('.current-sale .poh-buy').text(buyPrice.toFixed(6) + " ETH");
