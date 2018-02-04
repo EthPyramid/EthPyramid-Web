@@ -395,11 +395,13 @@ function convertWeiToEth(e) {
 }
 
 var ethPrice = 0;
+var currency = 'USD';
 
 function updateEthPrice() {
-	$.getJSON( 'https://api.coinmarketcap.com/v1/ticker/ethereum/', function( result ) {
+    currency = $( '#currency' ).val();
+	$.getJSON( 'https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=' + currency, function( result ) {
 		var eth = result[0];
-		ethPrice = parseFloat( eth.price_usd );
+		ethPrice = parseFloat( eth['price_' + currency.toLowerCase()] );
 		setTimeout( updateEthPrice, 10000 );
 	});
 }
@@ -421,7 +423,7 @@ function updateData(contract) {
         contract.getEtherForTokens(r, function(e, r) {
 	    let bal = convertWeiToEth(r*0.9);
             $(".current-sale .poh-value").text(bal.toFixed(4) + " ETH");
-	    $(".current-sale .usd-value").text("($"+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(2) + " USD)");
+	    $(".current-sale .usd-value").text("("+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(2) + " " + currency + ")");
 	    if( tokenBalance !== 0 ){
 		    if( bal > tokenBalance ){
                         $(".current-sale .poh-value").addClass('up').removeClass('down');
@@ -443,20 +445,20 @@ function updateData(contract) {
     contract.buyPrice(function(e, r) {
         let buyPrice = (1/(convertWeiToEth(r) * .9)/1000000);
         $('.current-sale .poh-buy').text(buyPrice.toFixed(6) + " ETH");
-		$(".current-sale .usd-buy").text("($"+(buyPrice * ethPrice).toFixed(2) + " USD)");        
+		$(".current-sale .usd-buy").text("("+(buyPrice * ethPrice).toFixed(2) + " " + currency + ")");
     })
 
     contract.sellPrice(function(e, r) {
         let sellPrice = convertWeiToEth(r);
         $('.current-sale .poh-sell').text(sellPrice.toFixed(6) + " ETH");
-		$(".current-sale .usd-sell").text("($"+(sellPrice * ethPrice).toFixed(2) + " USD)");
+		$(".current-sale .usd-sell").text("("+(sellPrice * ethPrice).toFixed(2) + " " + currency + ")");
     })
 
     contract.dividends(web3.eth.defaultAccount, function(e, r) {
 	let div = convertWeiToEth(r).toFixed(6);
 
         $('.current-sale .poh-div').text(div + " ETH");
-	$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
+	$(".current-sale .usd-div").text("("+(convertWeiToEth(r) * ethPrice).toFixed(2) + " " + currency + ")");
 
         if( dividendValue != div ){
 		$('.current-sale .poh-div').fadeTo(100, 0.3, function(){ $(this).fadeTo(250, 1.0); });;
