@@ -451,7 +451,7 @@ function updateData(contract) {
 	$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
 
         if( dividendValue != div ){
-		$('.current-sale .poh-div').fadeIn(100).fadeOut(100);
+		$('.current-sale .poh-div').fadeTo(100, 0.3, function(){ $(this).fadeTo(250, 1.0); });;
 		dividendValue = div;
 	}
     } )
