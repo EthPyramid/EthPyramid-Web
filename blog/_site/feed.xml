@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://blog.ethpyramid.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.ethpyramid.com/" rel="alternate" type="text/html" /><updated>2018-02-04T14:12:12+10:00</updated><id>https://blog.ethpyramid.com/</id><title type="html">EthPyramid Blog</title><subtitle>Official blog for EthPyramid</subtitle><entry><title type="html">EthPyramid News - Saturday the 3rd of February – first blogpost post-launch!</title><link href="https://blog.ethpyramid.com/news/2018/02/04/welcome-to-blog.html" rel="alternate" type="text/html" title="EthPyramid News - Saturday the 3rd of February – first blogpost post-launch!" /><published>2018-02-04T13:09:30+10:00</published><updated>2018-02-04T13:09:30+10:00</updated><id>https://blog.ethpyramid.com/news/2018/02/04/welcome-to-blog</id><content type="html" xml:base="https://blog.ethpyramid.com/news/2018/02/04/welcome-to-blog.html">&lt;p&gt;Welcome to the official EthPyramid blog. Here you’ll find news about recent or upcoming events as well as on-going developments in progress. First things first – let’s talk about our very successful launch!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title></title>
+		<description>Official blog for EthPyramid</description>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>EthPyramid News - Saturday the 3rd of February – first blogpost post-launch!</title>
+				<description>&lt;p&gt;Welcome to the official EthPyramid blog. Here you’ll find news about recent or upcoming events as well as on-going developments in progress. First things first – let’s talk about our very successful launch!&lt;/p&gt;
 
 &lt;h1 id=&quot;blogpost-4&quot;&gt;Blogpost #4&lt;/h1&gt;
 
@@ -78,4 +88,12 @@ Another unofficial/unaffiliated but interesting project related to ours;&lt;/p&g
 
 &lt;p&gt;We hope you’ve profited so far and have steadily grown more confident in the system! We know it works and we hope soon more and more people will see this for themselves. As always, don’t put in anything you’re not afraid to lose – we know there’s a very good chance you’ll do extremely well (especially now that the price of Ethereum itself is bouncing back) but either way we can most certainly promise one hell of a fun ride!  We’ll do our very best to answer any and all questions you might have. Stay tuned for more, and in the meantime, stay safe, play responsibly and have a great rest of the weekend.&lt;/p&gt;
 
-&lt;p&gt;The EthPyramid team.&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome to the official EthPyramid blog. Here you’ll find news about recent or upcoming events as well as on-going developments in progress. First things first – let’s talk about our very successful launch!</summary></entry></feed>
+&lt;p&gt;The EthPyramid team.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 04 Feb 2018 13:09:30 +1000</pubDate>
+				<link>/news/2018/02/04/welcome-to-blog.html</link>
+				<guid isPermaLink="true">/news/2018/02/04/welcome-to-blog.html</guid>
+			</item>
+		
+	</channel>
+</rss>
