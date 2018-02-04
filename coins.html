@@ -73,141 +73,144 @@
                         <script type="text/javascript" src="js/poh.js"></script>
 
                         <div id="token-sale" class="token-bg">
-                                <div class="container" style="float: left; width: 800px;">
-                                    <div class="token-content" id="buy-panel">
-                                         <div id="token-phase-1" class="token-phase-1">
-                                            <div class="title-bar clearfix visible-xs">
-                                                <h2 class="float-left" style="color:white">EthPyramid<span class="trademark">TM</span> Tokens </h2>
-                                                <span class="period float-right">Contract Balance: <span class="current-distribution-period">0.00</span> ETH</span>
-                                            </div>
-                                            <div class="row top-row clearfix">
-                                                <div class="col-4">
-                                                    <div class="buy-eos">
-                                                        <img src="images/spinning.gif" alt="" style="margin-bottom: 20px;">
-                                                        <input type="number" id="purchase-amount" class="form-control" placeholder="Amount of ETH to convert (e.g. 0.5)">
-                                                        <button id="buy-eos-tokens" class='cta' >BUY Tokens</button>
-                                                                                    </div>
+                                <div style="margin: 0 auto; width: 1200px">
+                                    <div class="container" style="float: left; margin-right: 50px; width: 970px;">
+                                        <div class="token-content" id="buy-panel">
+                                             <div id="token-phase-1" class="token-phase-1">
+                                                <div class="title-bar clearfix visible-xs">
+                                                    <h2 class="float-left" style="color:white">EthPyramid<span class="trademark">TM</span> Tokens </h2>
+                                                    <span class="period float-right">Contract Balance: <span class="current-distribution-period">0.00</span> ETH</span>
                                                 </div>
-                                                <div class="col-8">
-                                                    <div class="token-sale-count">                                                        
-                                                        <div class="current-sale">
-                                                            <div class="row">
-                                                                <div class="col">
-																	<div class="PriceBox">
-																	<p>Buy Price</p>
-																		<div class="poh-buy count"></div>
-																		<div class="usd-buy usdprice"></div>
-																	</div>
-																</div>
-                                                                <div class="col">
-																	<div class="PriceBox">
-																		<p>Sell Price</p>
-																		<div class="poh-sell count"></div>
-																		<div class="usd-sell usdprice"></div>
-																		
-																	</div>
-																</div>
-                                                                <div class="col">
-																	<div class="PriceBox">
-                                                                    <p>EthPyramid Token Balance:</p>
-                                                                    <div class="poh-balance count"></div>
-																	
-																	</div>
+                                                <div class="row top-row clearfix">
+                                                    <div class="col-4">
+                                                        <div class="buy-eos">
+                                                            <img src="images/spinning.gif" alt="" style="margin-bottom: 20px;">
+                                                            <input type="number" id="purchase-amount" class="form-control" placeholder="Amount of ETH to convert (e.g. 0.5)">
+                                                            <button id="buy-eos-tokens" class='cta' >BUY Tokens</button>
+                                                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="token-sale-count">
+                                                            <div class="current-sale">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                        <p>Buy Price</p>
+                                                                            <div class="poh-buy count"></div>
+                                                                            <div class="usd-buy usdprice"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                            <p>Sell Price</p>
+                                                                            <div class="poh-sell count"></div>
+                                                                            <div class="usd-sell usdprice"></div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                        <p>EthPyramid Token Balance:</p>
+                                                                        <div class="poh-balance count"></div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                        <p>Dividends:</p>
+                                                                        <div class="poh-div count"></div>
+                                                                        <div class="usd-div usdprice"></div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
 
-                                                                <div class="col">
-																	<div class="PriceBox">
-                                                                    <p>Dividends:</p>
-                                                                    <div class="poh-div count"></div>
-																	<div class="usd-div usdprice"></div>
-																	</div>
+
+                                                                <div class="row">
+                                                                    <div class="col" style="text-align: center; margin: 0 auto;">
+                                                                        <p>Estimated Value of Tokens:</p>
+                                                                        <div class="poh-value count"></div>
+                                                                        <div class="usd-value usdprice"></div>
+                                                                    </div>
+
+                                                                                                                                    <div class="traffic-message">
+                                                                    <i class="alert-icon"></i>Depending on the Ethereum network traffic, figures may be delayed.
                                                                 </div>
-                                                            </div>
-                                                            
-                                                            
-                                                            <div class="row">
-                                                                <div class="col" style="text-align: center; margin: 0 auto;">
-                                                                    <p>Estimated Value of Tokens:</p>
-                                                                    <div class="poh-value count"></div>
-																	<div class="usd-value usdprice"></div>
+                                                                    <div class="ContractBalance">
+                                                                            <span class="period float-right">Contract Balance  <span class="current-distribution-period">0.00</span> ETH</span>
+                                                                        </div>
                                                                 </div>
-																
-																																<div class="traffic-message">
-                                                                <i class="alert-icon"></i>Depending on the Ethereum network traffic, figures may be delayed.
-                                                            </div>
-																<div class="ContractBalance">
-																		<span class="period float-right">Contract Balance  <span class="current-distribution-period">0.00</span> ETH</span>
-																	</div>	
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <hr>
-                                            <div class="eos-features-main" id="token-actions-box">
-                                                <div class="features-box-main">
-                                                    <div class="visible-xs">
-                                                        <ul class="bxslider">
-                                                            <li>
+                                                <hr>
+                                                <div class="eos-features-main" id="token-actions-box">
+                                                    <div class="features-box-main">
+                                                        <div class="visible-xs">
+                                                            <ul class="bxslider">
+                                                                <li>
+                                                                    <div class="features-box col-4 feat-scalable">
+
+                                                                        <button id="sell-tokens-btn-m" class='cta' >Sell Tokens</button>
+
+                                                                        <div class="line"></div>
+                                                                        <p>Your tokens will be sold at the sell-price and will be converted into dividends balance.</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="features-box col-4 feat-flexible">
+
+                                                                        <button id="reinvest-btn-m" class='cta' >Buy With Dividends</button>
+                                                                        <div class="line"></div>
+                                                                        <p>Reinvest your dividends into tokens.</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="features-box col-4 feat-usable">
+
+                                                                        <button id="withdraw-btn-m" class='cta' >Withdraw</button>
+                                                                        <div class="line"></div>
+                                                                        <p>Withdraw your dividends balance back into your Ethereum wallet.</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="hidden-xs">
+                                                            <div class="flex-parent clearfix" id="token-actions">
                                                                 <div class="features-box col-4 feat-scalable">
-                                           
-                                                                    <button id="sell-tokens-btn-m" class='cta' >Sell Tokens</button>
+                                                                        <button id="sell-tokens-btn" class='cta' >Sell Tokens</button>
 
-                                                                    <div class="line"></div>
-                                                                    <p>Your tokens will be sold at the sell-price and will be converted into dividends balance.</p>
+                                                                        <p>Your tokens will be sold at the sell-price and will be converted into dividends balance.</p>
                                                                 </div>
-                                                            </li>
-                                                            <li>
                                                                 <div class="features-box col-4 feat-flexible">
-                                                                    
-                                                                    <button id="reinvest-btn-m" class='cta' >Buy With Dividends</button>
-                                                                    <div class="line"></div>
-                                                                    <p>Reinvest your dividends into tokens.</p>
+                                                                        <button id="reinvest-btn" class='cta' >Buy With Dividends</button>
+
+
+                                                                        <p>Uses your dividend balance to buy more tokens at the current rate.</p>
                                                                 </div>
-                                                            </li>
-                                                            <li>
                                                                 <div class="features-box col-4 feat-usable">
-                                                                    
-                                                                    <button id="withdraw-btn-m" class='cta' >Withdraw</button>
-                                                                    <div class="line"></div>
-                                                                    <p>Withdraw your dividends balance back into your Ethereum wallet.</p>
+                                                                        <button id="withdraw-btn" class='cta' >Withdraw</button>
+
+                                                                        <p>Withdraw your dividends balance back into your Ethereum wallet.</p>
                                                                 </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="hidden-xs">
-                                                        <div class="flex-parent clearfix" id="token-actions">
-                                                            <div class="features-box col-4 feat-scalable">
-                                                                    <button id="sell-tokens-btn" class='cta' >Sell Tokens</button>
-
-                                                                    <p>Your tokens will be sold at the sell-price and will be converted into dividends balance.</p>
-                                                            </div>
-                                                            <div class="features-box col-4 feat-flexible">
-                                                                    <button id="reinvest-btn" class='cta' >Buy With Dividends</button>
-
-                      
-                                                                    <p>Uses your dividend balance to buy more tokens at the current rate.</p>
-                                                            </div>
-                                                            <div class="features-box col-4 feat-usable">
-                                                                    <button id="withdraw-btn" class='cta' >Withdraw</button>
-                                                         
-                                                                    <p>Withdraw your dividends balance back into your Ethereum wallet.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                                        </div>
+                                        <div id="metamask-not-found" style="padding: 15px; display: none">
+                                                        <h2 class="float-left">MetaMask Not Found</h2></br>
+
+                                                <h3>To interact with the network, you must have <a href="https://metamask.io/">Metamask</a> installed and setup.</h3>
                                         </div>
-                                                    </div>
-                                    <div id="metamask-not-found" style="padding: 15px; display: none">
-                                                    <h2 class="float-left">MetaMask Not Found</h2></br>
-                                                    
-                                            <h3>To interact with the network, you must have <a href="https://metamask.io/">Metamask</a> installed and setup.</h3>
+                                    </div>
+                                    <div style="width: 400px;">
+                                        <iframe src="https://titanembeds.com/embed/408119545379815434?defaultchannel=409635306942496768" height="900" width="400" frameborder="0"></iframe>
                                     </div>
                                 </div>
-                                <div style="float: right; width: 400px; padding 10px;">
-                                    <iframe src="https://titanembeds.com/embed/408119545379815434?defaultchannel=409635306942496768" height="900" width="400" frameborder="0"></iframe>
-                                </div>
+                                <div class="clearfix"></div>
                             </div>
 							<div class="graphEmbed clearfix" style="background:white; margin-top:-30px;">
 							<div class="container" style="padding-bottom:30px;">
