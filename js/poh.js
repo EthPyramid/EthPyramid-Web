@@ -445,9 +445,9 @@ function updateData(contract) {
     })
 
     contract.dividends(web3.eth.defaultAccount, function(e, r) {
-	let div = convertWeiToEth(r);
+	let div = convertWeiToEth(r).toFixed(6);
 
-        $('.current-sale .poh-div').text(div.toFixed(6) + " ETH");
+        $('.current-sale .poh-div').text(div + " ETH");
 	$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
 
         if( dividendValue != div ){
