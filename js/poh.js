@@ -430,7 +430,7 @@ function updateData(contract) {
     })
 
     contract.dividends(web3.eth.defaultAccount, function(e, r) {
-        $('.current-sale .poh-div').text(convertWeiToEth(r).toFixed(4) + " ETH");
+        $('.current-sale .poh-div').text(convertWeiToEth(r).toFixed(6) + " ETH");
 		$(".current-sale .usd-div").text("($"+(convertWeiToEth(r) * ethPrice).toFixed(2) + " USD)");
     } )
 
