@@ -404,15 +404,15 @@ function updateEthPrice() {
 
 updateEthPrice();
 
+var dividendValue = 0;
+var tokenBalance = 0;
+
 function updateData(contract) {
     // Populate data
     // console.log(contract)
     if(!web3.eth.defaultAccount) {
         return
     }
-
-    var dividendValue = 0;
-    var tokenBalance = 0;
 
     contract.balanceOf(web3.eth.defaultAccount, function(e, r) {
         $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " EPY");
