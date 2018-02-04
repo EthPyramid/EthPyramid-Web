@@ -1,7 +1,7 @@
 body {
   padding-top: 80px;
   color: #dddddd;
-  background: #374b56; }
+  background: #3f4045; }
 
 .well {
   background-color: #444;
@@ -220,6 +220,9 @@ nav .navbar-toggle {
 nav.shrink .navbar-toggle {
   padding: 4px 5px;
   margin: 8px 15px 8px 0; }
+
+nav.navbar-inverse {
+  background: #374b56; }
 
 .footer {
   text-align: center; }
