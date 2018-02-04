@@ -5325,7 +5325,7 @@ _:-ms-fullscreen, :root .modal .modal-body .token-check-condition input[type='ch
   opacity: 0.8;
 }
 .currency-selector {
-  color: white;
+  text-align:center;
   padding: 10px;
 }
 .currency-selector select {
