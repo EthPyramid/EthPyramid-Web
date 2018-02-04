@@ -2,7 +2,8 @@
 layout: post
 title:  "EthPyramid News - Saturday the 3rd of February – first blogpost post-launch!"
 date:   2018-02-04 13:09:30 +1000
-categories: news
+tags:
+ - news
 ---
 Welcome to the official EthPyramid blog. Here you’ll find news about recent or upcoming events as well as on-going developments in progress. First things first – let’s talk about our very successful launch! 
 
