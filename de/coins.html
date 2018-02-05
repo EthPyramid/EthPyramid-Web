@@ -78,7 +78,7 @@
         <div class="faq-main-content">
 
 		<div class="faq-header text-center">
-                            <h2 style="color:#d69361">Purchase EthPyramid Tokens</h2>
+                            <h2 style="color:#d69361">EthPyramid Münzen kaufen</h2>
 							<div id="quoteDisplay"></div>
 							<script>newQuote()</script>
                         </div>
@@ -98,10 +98,10 @@
                                                         <div class="buy-eos">
                                                             <img src="../images/spinning.gif" alt="" style="margin-bottom: 20px;">
                                                             <input type="number" id="purchase-amount" class="form-control" placeholder="Amount in ETH (e.g. 0.5)">
-                                                            <button id="buy-eos-tokens" class='cta' >BUY Tokens</button>
+                                                            <button id="buy-eos-tokens" class='cta' >Münzen einkaufen</button>
                                                         </div>
                                                         <div class="currency-selector">
-                                                            Select your currency:
+                                                            Währung:
                                                             <select id="currency">
                                                                 <option>USD</option>
                                                                 <option>AUD</option>
@@ -144,14 +144,14 @@
                                                                 <div class="row">
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                        <p>Buy Price</p>
+                                                                        <p>Einkaufspreis</p>
                                                                             <div class="poh-buy count"></div>
                                                                             <div class="usd-buy usdprice"></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                            <p>Sell Price</p>
+                                                                            <p>Verkaufspreis</p>
                                                                             <div class="poh-sell count"></div>
                                                                             <div class="usd-sell usdprice"></div>
 
@@ -159,7 +159,7 @@
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                        <p>EthPyramid Token Balance:</p>
+                                                                        <p>EthPyramid Kontostand:</p>
                                                                         <div class="poh-balance count"></div>
 
                                                                         </div>
@@ -167,7 +167,7 @@
 
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                        <p>Dividends:</p>
+                                                                        <p>Dividenden:</p>
                                                                         <div class="poh-div count"></div>
                                                                         <div class="usd-div usdprice"></div>
                                                                         </div>
@@ -177,16 +177,16 @@
 
                                                                 <div class="row">
                                                                     <div class="col" style="text-align: center; margin: 0 auto;">
-                                                                        <p>Estimated Value of Tokens:</p>
+                                                                        <p>Geschätzter Wert der Münzen:</p>
                                                                         <div class="poh-value count"></div>
                                                                         <div class="usd-value usdprice"></div>
                                                                     </div>
                                                                     <div class="traffic-message">
-                                                                        <i class="alert-icon"></i>Depending on the Ethereum network traffic, figures may be delayed.
+                                                                        <i class="alert-icon"></i>Je nach Ethereum Datenverkehr können werte abgleichen.
                                                                     </div>
                                                                     <div class="ContractBalance">
-                                                                        <span class="period float-left"><a href="#" id="chat-toggle">Toggle Chat</a></span>
-                                                                        <span class="period float-right">Contract Balance  <span class="current-distribution-period">0.00</span> ETH</span>
+                                                                        <span class="period float-left"><a href="#" id="chat-toggle">Chatraum</a></span>
+                                                                        <span class="period float-right">Vertragsstand <span class="current-distribution-period">0.00</span> ETH</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -201,26 +201,23 @@
                                                                 <li>
                                                                     <div class="features-box col-4 feat-scalable">
 
-                                                                        <button id="sell-tokens-btn-m" class='cta' >Sell Tokens</button>
-
+                                                                        <button id="sell-tokens-btn-m" class='cta' >Münzen Verkaufen</button>
                                                                         <div class="line"></div>
-                                                                        <p>Your tokens will be sold at the sell-price and will be converted into dividends balance.</p>
+                                                                        <p>Deine Münzen werden zum aktuellen Verkaufspreis in deine Dividendenbörse gezahlt.</p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div class="features-box col-4 feat-flexible">
-
-                                                                        <button id="reinvest-btn-m" class='cta' >Buy With Dividends</button>
+                                                                        <button id="reinvest-btn-m" class='cta' >Einkauf mit Dividenden</button>
                                                                         <div class="line"></div>
-                                                                        <p>Reinvest your dividends into tokens.</p>
+                                                                        <p>Dividenden zum Münzkauf verwenden</p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div class="features-box col-4 feat-usable">
-
-                                                                        <button id="withdraw-btn-m" class='cta' >Withdraw</button>
+                                                                        <button id="withdraw-btn-m" class='cta' >Abheben</button>
                                                                         <div class="line"></div>
-                                                                        <p>Withdraw your dividends balance back into your Ethereum wallet.</p>
+                                                                        <p>Dividenden abheben und zur Ethereumbörse schicken.</p>
                                                                     </div>
                                                                 </li>
                                                             </ul>
@@ -228,20 +225,16 @@
                                                         <div class="hidden-xs">
                                                             <div class="flex-parent clearfix" id="token-actions">
                                                                 <div class="features-box col-4 feat-scalable">
-                                                                        <button id="sell-tokens-btn" class='cta' >Sell Tokens</button>
-
-                                                                        <p>Your tokens will be sold at the sell-price and will be converted into dividends balance.</p>
+                                                                        <button id="sell-tokens-btn" class='cta' >Münzen Verkaufen</button>
+                                                                        <p>Deine Münzen werden zum aktuellen Verkaufspreis in deine Dividendenbörse gezahlt.</p>
                                                                 </div>
                                                                 <div class="features-box col-4 feat-flexible">
-                                                                        <button id="reinvest-btn" class='cta' >Buy With Dividends</button>
-
-
-                                                                        <p>Uses your dividend balance to buy more tokens at the current rate.</p>
+                                                                    <button id="reinvest-btn" class='cta' >Einkauf mit Dividenden</button>
+                                                                    <p>Dividenden zum Münzkauf verwenden</p>
                                                                 </div>
                                                                 <div class="features-box col-4 feat-usable">
-                                                                        <button id="withdraw-btn" class='cta' >Withdraw</button>
-
-                                                                        <p>Withdraw your dividends balance back into your Ethereum wallet.</p>
+                                                                    <button id="withdraw-btn" class='cta' >Abheben</button>
+                                                                    <p>Dividenden abheben und zur Ethereumbörse schicken.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
