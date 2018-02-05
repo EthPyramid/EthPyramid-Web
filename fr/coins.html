@@ -85,7 +85,7 @@
                         </div>
                         <script type="text/javascript" src="../js/poh.js"></script>
 
-                        <div id="token-sale" class="token-bg">
+                        <div id="token-sale" class="token-bg nochat">
                                 <div style="margin: 0 auto; width: 1200px">
                                     <div class="container" style="float: left; margin-right: 20px; width: 940px;">
                                         <div class="token-content" id="buy-panel">
@@ -100,7 +100,44 @@
                                                             <img src="../images/spinning.gif" alt="" style="margin-bottom: 20px;">
                                                             <input type="number" id="purchase-amount" class="form-control" placeholder="Quantité de ETH à convertir (par exemple 0.5)">
                                                             <button id="buy-eos-tokens" class='cta' >Acheter</button>
-                                                                                        </div>
+                                                        </div>
+                                                        <div class="currency-selector">
+                                                            Select your currency:
+                                                            <select id="currency">
+                                                                <option>USD</option>
+                                                                <option>AUD</option>
+                                                                <option>BRL</option>
+                                                                <option>CAD</option>
+                                                                <option>CHF</option>
+                                                                <option>CLP</option>
+                                                                <option>CNY</option>
+                                                                <option>CZK</option>
+                                                                <option>DKK</option>
+                                                                <option>EUR</option>
+                                                                <option>GBP</option>
+                                                                <option>HKD</option>
+                                                                <option>HUF</option>
+                                                                <option>IDR</option>
+                                                                <option>ILS</option>
+                                                                <option>INR</option>
+                                                                <option>JPY</option>
+                                                                <option>KRW</option>
+                                                                <option>MXN</option>
+                                                                <option>MYR</option>
+                                                                <option>NOK</option>
+                                                                <option>NZD</option>
+                                                                <option>PHP</option>
+                                                                <option>PKR</option>
+                                                                <option>PLN</option>
+                                                                <option>RUB</option>
+                                                                <option>SEK</option>
+                                                                <option>SGD</option>
+                                                                <option>THB</option>
+                                                                <option>TRY</option>
+                                                                <option>TWD</option>
+                                                                <option>ZAR</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                     <div class="col-8">
                                                         <div class="token-sale-count">
@@ -150,6 +187,7 @@
                                                                     <i class="alert-icon"></i>Selon le trafic du réseau Ethereum, les chiffres peuvent être retardés.
                                                                 </div>
                                                                     <div class="ContractBalance">
+                                                                            <span class="period float-left"><a href="#" id="chat-toggle">Chat</a></span>
                                                                             <span class="period float-right">Solde du Contrat <span class="current-distribution-period">0.00</span> ETH</span>
                                                                         </div>
                                                                 </div>
@@ -219,7 +257,7 @@
                                                 <h3>Pour interagir avec le contrat, vous devez avoir <a href="https://metamask.io/">Metamask</a> installé et configuré</h3>
                                         </div>
                                     </div>
-                                    <div style="width: 200px; float: right;">
+                                    <div class="chat-box">
                                         <iframe src="https://titanembeds.com/embed/408119545379815434?defaultchannel=408119545379815438" height="700" width="400" frameborder="0"></iframe>
                                     </div>
                                 </div>
