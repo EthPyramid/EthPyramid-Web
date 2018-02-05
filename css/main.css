@@ -238,7 +238,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   color: #FFFFFF;
-  width: 196px;
+  width: 244px;
   text-align: center;
   display: inline-block;
   height: 48px;
@@ -1377,6 +1377,7 @@ div#privacy-policy div.content p {
 #token-actions p {
   font-size: 13px;
   line-height: 1.5;
+  padding: 10px;
 }
 
 .token-sale-count {
