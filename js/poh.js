@@ -418,9 +418,9 @@ $( function(){
     $('#chat-toggle').click( function(e){
         e.preventDefault();
         if( chaton ){
-            $('#token-sale').removeClass('nochat').addClass('chat');
-        } else {
             $('#token-sale').removeClass('chat').addClass('nochat');
+        } else {
+            $('#token-sale').removeClass('nochat').addClass('chat');
         }
         chaton = !chaton;
     });
