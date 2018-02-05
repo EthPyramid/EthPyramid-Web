@@ -375,7 +375,7 @@ img {
 }
 .middle-content .main-logo-wrapper{
   margin: auto;
-      margin-top: 183px;
+      margin-top: 10px;
 }
 
 .Straya{
@@ -3806,7 +3806,7 @@ textarea#abi-inerface:focus{
 }
 
   .middle-content .main-logo-wrapper img{
-    width: 240px;
+    width: 380px;
   }
 
 
