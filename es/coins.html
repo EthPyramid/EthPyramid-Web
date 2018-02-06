@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="EthPyramid">
-    <meta name="description" content="Une pyramide sécurisée, transparente et autonome.">
+    <meta name="description" content="Un esquema piramidal autosustentable, transparente y sin trampas.">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../favicon.ico">
-    <title> EthPyramid | ES | Acheter/Vendre Jetons </title>
+    <title> EthPyramid | ES | Compra/Venta Monedas </title>
     <link rel="stylesheet" href="../css/jquery.modal.min.css">
     <!--custom stylesheet -->
     <link rel="stylesheet" href="../css/main.css?1507783168">
@@ -39,9 +39,10 @@
     <div class="introduction-banner">
         <div class="header sticky-header">
 		<div class="flagBits">
-		<a href="#"><img src="../images/FR.jpg"></a>
+		<a href="#"><img src="../images/ES.jpg"></a>
 		<a href="../coins.html"><img src="../images/UK.jpg"></a>
 		<a href="../au/coins.html"><img src="../images/AU.jpg"></a>
+        <a href="../fr/coins.html"><img src="../images/FR.jpg"></a>
         <a href="../de/coins.html"><img src="../images/DE.jpg"></a>
 		</div>
 				<div class="socialBits">
@@ -62,14 +63,14 @@
                     </div>
                     <div class="navigation">
                         <ul>
-                            <li><a href="https://etherscan.io/address/0x2fa0ac498d01632f959d3c18e38f4390b005e200" target="_blank">Smart Contract</a>
+                            <li><a href="https://etherscan.io/address/0x2fa0ac498d01632f959d3c18e38f4390b005e200" target="_blank">Contrato Inteligente</a>
                             </li>
-                            <li><a href="coins.html">Mis Monedas</a>
-							<li><a href="https://blog.ethpyramid.com"><span style="color:#FF4444">NEW!   </span>Blog</a>
+                            <li><a href="coins.html">Mis Tokens</a>
+							<li><a href="https://blog.ethpyramid.com"><span style="color:#FF4444">NUEVO!   </span>Blog</a>
                             </li>
                             </li>
                             <li>
-                                <a href="whitepaper.html" target="_blank">Livre blanc</a>
+                                <a href="whitepaper.html" target="_blank">Papel Blanco</a>
                             </li>
                         </ul>
                     </div>
@@ -79,7 +80,7 @@
         <div class="faq-main-content">
 
 		<div class="faq-header text-center">
-                            <h2 style="color:#d69361">Acheter des jetons EthPyramid</h2>
+                            <h2 style="color:#d69361">Compra de tokens EthPyramid</h2>
 							<div id="quoteDisplay"></div>
 							<script>newQuote()</script>
                         </div>
@@ -91,18 +92,18 @@
                                         <div class="token-content" id="buy-panel">
                                              <div id="token-phase-1" class="token-phase-1">
                                                 <div class="title-bar clearfix visible-xs">
-                                                    <h2 class="float-left" style="color:white">EthPyramid<span class="trademark">TM</span> Jetons </h2>
-                                                    <span class="period float-right">Solde du Contrat: <span class="current-distribution-period">0.00</span> ETH</span>
+                                                    <h2 class="float-left" style="color:white">EthPyramid<span class="trademark">TM</span> Tokens </h2>
+                                                    <span class="period float-right">Cantidad en el Contrato: <span class="current-distribution-period">0.00</span> ETH</span>
                                                 </div>
                                                 <div class="row top-row clearfix">
                                                     <div class="col-4">
                                                         <div class="buy-eos">
                                                             <img src="../images/spinning.gif" alt="" style="margin-bottom: 20px;">
-                                                            <input type="number" id="purchase-amount" class="form-control" placeholder="Quantité de ETH à convertir (par exemple 0.5)">
-                                                            <button id="buy-eos-tokens" class='cta' >Acheter</button>
+                                                            <input type="number" id="purchase-amount" class="form-control" placeholder="Cantidad en ETH (ej. 0.5)">
+                                                            <button id="buy-eos-tokens" class='cta' >Comprar Tokens</button>
                                                         </div>
                                                         <div class="currency-selector">
-                                                            Choisissez votre devise:
+                                                            Selecciona tu moneda:
                                                             <select id="currency">
                                                                 <option>USD</option>
                                                                 <option>AUD</option>
@@ -145,14 +146,14 @@
                                                                 <div class="row">
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                        <p>Prix d'achat</p>
+                                                                        <p>Precio de Compra</p>
                                                                             <div class="poh-buy count"></div>
                                                                             <div class="usd-buy usdprice"></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                            <p>Prix de vente</p>
+                                                                            <p>Precio de Venta</p>
                                                                             <div class="poh-sell count"></div>
                                                                             <div class="usd-sell usdprice"></div>
 
@@ -160,7 +161,7 @@
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                        <p>Solde des jetons EthPyramid:</p>
+                                                                        <p>Cantidad de Tokens EthPyramide:</p>
                                                                         <div class="poh-balance count"></div>
 
                                                                         </div>
@@ -168,7 +169,7 @@
 
                                                                     <div class="col">
                                                                         <div class="PriceBox">
-                                                                        <p>Dividendes:</p>
+                                                                        <p>Dividendos:</p>
                                                                         <div class="poh-div count"></div>
                                                                         <div class="usd-div usdprice"></div>
                                                                         </div>
@@ -178,17 +179,17 @@
 
                                                                 <div class="row">
                                                                     <div class="col" style="text-align: center; margin: 0 auto;">
-                                                                        <p>Estimation:</p>
+                                                                        <p>Valor Estimado de los Tokens:</p>
                                                                         <div class="poh-value count"></div>
                                                                         <div class="usd-value usdprice"></div>
                                                                     </div>
 
                                                                                                                                     <div class="traffic-message">
-                                                                    <i class="alert-icon"></i>Selon le trafic du réseau Ethereum, les chiffres peuvent être retardés.
+                                                                    <i class="alert-icon"></i>Dependiendo del tráfico de la red Ethereum la actualización de los valores puede sufrir retrasos.
                                                                 </div>
                                                                     <div class="ContractBalance">
                                                                             <span class="period float-left"><a href="#" id="chat-toggle">Chat</a></span>
-                                                                            <span class="period float-right">Solde du Contrat <span class="current-distribution-period">0.00</span> ETH</span>
+                                                                            <span class="period float-right">Valor Estimado de los Tokens <span class="current-distribution-period">0.00</span> ETH</span>
                                                                         </div>
                                                                 </div>
                                                             </div>
@@ -203,26 +204,26 @@
                                                                 <li>
                                                                     <div class="features-box col-4 feat-scalable">
 
-                                                                        <button id="sell-tokens-btn-m" class='cta' >Vendre</button>
+                                                                        <button id="sell-tokens-btn-m" class='cta' >Vender Tokens</button>
 
                                                                         <div class="line"></div>
-                                                                        <p>Vos jetons seront vendus au prix de vente et seront ajoutés a vos dividendes.</p>
+                                                                        <p>Tus tokens serán vendidos al precio de venta y el balance será enviado a dividendos.</p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div class="features-box col-4 feat-flexible">
 
-                                                                        <button id="reinvest-btn-m" class='cta' >Réinvestir</button>
+                                                                        <button id="reinvest-btn-m" class='cta' >Comprar Con Dividendos</button>
                                                                         <div class="line"></div>
-                                                                        <p>Réinvestissez vos dividendes en jetons.</p>
+                                                                        <p>Usar los dividendos en tu cuenta para comprar más tokens al valor de compra actual.</p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div class="features-box col-4 feat-usable">
 
-                                                                        <button id="withdraw-btn-m" class='cta' >Retirer</button>
+                                                                        <button id="withdraw-btn-m" class='cta' >Retirar</button>
                                                                         <div class="line"></div>
-                                                                        <p>Retirez vos dividendes dans votre portefeuille Ethereum.</p>
+                                                                        <p>Enviar tus dividendos hacía tu cartera Ethereum.</p>
                                                                     </div>
                                                                 </li>
                                                             </ul>
@@ -230,20 +231,20 @@
                                                         <div class="hidden-xs">
                                                             <div class="flex-parent clearfix" id="token-actions">
                                                                 <div class="features-box col-4 feat-scalable">
-                                                                        <button id="sell-tokens-btn" class='cta' >Vendre</button>
+                                                                        <button id="sell-tokens-btn" class='cta' >Vender Tokens</button>
 
-                                                                        <p>Vos jetons seront vendus au prix de vente et seront ajoutés a vos dividendes.</p>
+                                                                        <p>Tus tokens serán vendidos al precio de venta y el balance será enviado a dividendos.</p>
                                                                 </div>
                                                                 <div class="features-box col-4 feat-flexible">
-                                                                        <button id="reinvest-btn" class='cta' >Réinvestir</button>
+                                                                        <button id="reinvest-btn" class='cta' >Comprar Con Dividendos</button>
 
 
-                                                                        <p>Réinvestissez vos dividendes en jetons.</p>
+                                                                        <p>Usar los dividendos en tu cuenta para comprar más tokens al valor de compra actual</p>
                                                                 </div>
                                                                 <div class="features-box col-4 feat-usable">
-                                                                        <button id="withdraw-btn" class='cta' >Retirer</button>
+                                                                        <button id="withdraw-btn" class='cta' >Retirar</button>
 
-                                                                        <p>Retirez vos dividendes dans votre portefeuille Ethereum.</p>
+                                                                        <p>Enviar tus dividendos hacía tu cartera Ethereum.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -252,9 +253,9 @@
                                             </div>
                                                         </div>
                                         <div id="metamask-not-found" style="padding: 15px; display: none">
-                                                        <h2 class="float-left">MetaMask introuvable</h2></br>
+                                                        <h2 class="float-left">MetaMask no encontrado</h2></br>
 
-                                                <h3>Pour interagir avec le contrat, vous devez avoir <a href="https://metamask.io/">Metamask</a> installé et configuré</h3>
+                                                <h3>Para interactuar con la red, debe tener <a href="https://metamask.io/">Metamask</a> instalado y configurado.</h3>
                                         </div>
                                     </div>
                                     <div class="chat-box">
@@ -267,54 +268,51 @@
 							<div class="container" style="padding-bottom:30px;">
 
 							<div class="text-center" style="padding-top:30px;">
-								<h2 style="color:#d69361">EthPyramid - Graphique historique (Prix de vente)</h2>
+								<h2 style="color:#d69361">EthPyramid – Gráfico Histórico (Precio de Venta)</h2>
 							</div>
 							<iframe src="https://powhchart.com/graph_hotlink.html?assetId=ethpyramid&yaxis_min=0" style="width:100%; height:575px; overflow:hidden;" scrolling="no"></iframe>
-							<span style="font-weight:100;">Créé par:</span>&nbsp;&nbsp;<a href="https://www.reddit.com/user/JuiceInNuggets/" style="color:green;" target="_blank">/u/JuiceInNuggets</a> - Faire un don en ETH: 0xEfFcc2Db685C04276153Bb91Ca3FC4297a44f04D
+							<span style="font-weight:100;">Creado por:</span>&nbsp;&nbsp;<a href="https://www.reddit.com/user/JuiceInNuggets/" style="color:green;" target="_blank">/u/JuiceInNuggets</a> - Donar ETH: 0xEfFcc2Db685C04276153Bb91Ca3FC4297a44f04D
 							</div>
 							</div>
 							<div class="container" style="margin-top:50px; border-bottom: 1px solid white; padding-bottom: 20px; margin-bottom: 40px;">
-	<h5 style="color:white;">Instructions pour ceux qui veulent aider à construire la grande pyramide d'Ether:</h5>
-	<p></p><li>Tout d'abord, installez MetaMask <a href="https://metamask.io/">ici</a> et mettez de l'éther dedans.</li><p></p>
-	<p></p><li>Pour acheter des EPY, cliquez simplement sur le bouton "Acheter" et entrez le montant d'Ether que vous voulez convertir en EPY, basé sur le prix d'achat actuel.
-               Appuyez deux fois sur le bouton "Yep" (n'ignorez pas l'avertissement). Lorsque vous confirmez la transaction sur MetaMask, veillez à utiliser un prix de gaz suffisamment élevé pour que le prix d'achat ne change pas radicalement pendant la transaction.
-	           Vous pouvez voir les prix du gaz recommandés <a href="https://ethgasstation.info/">ici</a>.
-               L'achat de jetons augmentera à la fois le prix d'achat et le prix de vente de 0,25% par jeton achetée une fois la transaction terminée.</li><p></p>
-	<p></p><li>Sous "Solde des EthPyramid jetons", vous pouvez voir combien d'EPY vous possédez actuellement.
-               Notez que lors de l'encaissement des jetons, le prix d'achat et le prix de vente diminuent ainsi diminuant la valeur de vos jetons (et des jetons de tout le monde) de 0,25% par jeton.</li><p></p>
-	<p></p><li>A chaque fois que des EPY sont acheté ou vendu, un pourcentage de la taxe sur les jetons achetés et vendus sera réparti entre les détenteurs actuels de EPY (Dividendes).</li><p></p>
-	<p></p><li>Vous pouvez déplacer vos jetons dans Dividendes, qui seront ensuite stockés en Ethereum. Pour ce faire, cliquez sur le bouton "Vendre" et vos jetons seront transférés dans votre solde de dividendes.</li><p></p>
-	<p></p><li>Vous pouvez également réinvestir vos Dividendes directement dans votre solde EPY en sélectionnant "Réinvestir".</li><p></p>
-	<p></p><li>Pour encaisser vos jetons, cliquez sur le bouton "Retirer" et suivez les instructions.</li><p></p>
-	<p></p><li><b>VEUILLEZ SAUVEGUARDER LE TEXTE SUIVANT:</b> Si, pour une raison quelconque, ce site n'est pas accessible, vous pouvez ouvrir une transaction via Metamask, envoyez 0 Ether avec une limite de gaz 150k au contrat à "0x2fa0ac498d01632f959d3c18e38f4390b005e200" et ajoutez "0xb1e35242" sous les données supplémentaires (additional data) pour un plan de sortie personnel.
-                  C'est la fonction getMeOutOfHere() du contrat et vous encaisserez de tous vos jetons et dividendes.</li><p></p>
+	<h5 style="color:white;">Instrucciones para aquellos que quieran ayudar a construir la gran pirámide de Ether:</h5>
+	<p></p><li>Antes que nada, instalar MetaMask <a href="https://metamask.io/">aqui</a> y meter algo de Ether.</li><p></p>
+	<p></p><li>Para comprar EPY, ingresar la cantidad de Ether que quieras convertir en EPY (basado en el precio de compra actual) y pinchar en “Comprar EPY”.
+               Al confirmar la transacción en MetaMask hay que asegurarse de utilizar un precio del “gas” suficiente para que el precio no cambie dramáticamente mientras la transacción se concreta.
+	           <a href="https://ethgasstation.info/">Aquí</a> puedes ver el precio del “gas” recomendado.
+               Al comprar las monedas, el precio de Compra y de Venta se incrementará un 0,25% por moneda comprada una vez que la transacción se realice.</li><p></p>
+	<p></p><li>Bajo el concepto de “Cantidad de Tokens” podrás ver cuantas EPY posees.
+               Hay que tener en cuenta que al vender las monedas tanto el precio de Compra como el de Venta caerá. Reduciendo el valor de tus monedas (y las del resto) un 0,25%. 0,25% par jeton.</li><p></p>
+	<p></p><li>Cada vez que una EPY se compre o se venda, un porcentaje de la comisión de compra/venta será dividido entre los que tengan en ese momento monedas EPY en la forma de dividendos.</li><p></p>
+	<p></p><li>En cualquier momento que quieras puedes mover tus monedas a Ethereum (que se guardarán en forma de dividendos).</li><p></p>
+	<p></p><li>Para hacer esto únicamente pincha en el botón “Vender Tokens” y automáticamente serán transferidos a tu cuenta de dividendos. También puedes re-invertir tus dividendos automáticamente en monedas EPY pinchando en “Comprar Con Dividendos”.</li><p></p>
+	<p></p><li>Para transferir tu balance de Ethereum simplemente pincha en el botón “Retirar”.</li><p></p>
+	<p></p><li><b>POR FAVOR GUARDA ESTO EN UN LUGAR SEGURO: </b>Si el sitio web se cae o deja de existir, en cualquier momento puede salir del contrato y retirar todos sus fondos directamente en ETH abriendo una transacción a través de Metamask, enviando 0 ether con un límite de gas (gas limit) de 150k al contrato e ingresando "0xb1e35242" en datos adicionales (additional data). Esta es la función getMeOutOfHere () en el contrato y retirará todo el dinero de todos sus tokens y dividendos a tu cartera.</li><p></p>
 </div>
 							<div class="container">
                             <div class="sections">
-                                <h4 id="1">Q: Est-ce réel?</h4>
-                                <p>R: Oui, les jetons EthPyramid (EPY) sont construits depuis la blockchain éthereum. Ils n'ont aucune valeur en dehors de s'engager dans le jeu EP avec notre robot et vous ne devriez pas considérer ceci comme un investissement.</p>
-                             </div>
+                                <h4 id="1">P: ¿Esto es real?</h4>
+                                <p>R: Sí, los tokens de EthPyramid son tokens estándar ERC20 construidos en la cadena de bloques de Ethereum que puedes vender en este sitio. Sin embargo, no tienen ningún valor más que para participar en este juego con nuestro (altamente sobrecalificado) Robot de Matemáticas y usted no debería considerarlo, en ninguna circunstancia, una inversión real.</p></div>
                              <div class="sections">
-                                <h4 id="2">Q: Est-ce que ce code a été copié collé à partir du code POWH?</h4>
-                                <p>R: Le code d'EthPyramid a été créé à partir de zéro, toutes les failles trouvées précédemment dans les systèmes de ponzi défectueux ne sont pas présentes dans EthPryamid. L'équipe de développement d'EthPyramid n'a jamais été liée à POWHcoin.</p>
-                             </div>
+                                <h4 id="2">P: ¿No había ya algo similar a esto previamente?</h4>
+                                <p>R: Sí, hay varias variaciones de ponzis, pirámides y otros esquemas; EthPyramid es el siguiente paso con dividendos reinvertibles y una redistribución del 10% en ventas. Nuestro equipo (diverso e internacional) ha trabajado día y noche para evitar cualquier bug, error o falla que otros equipos no detectaron en el código del contrato.</p>
+								</div>
                              <div class="sections">
-                                <h4 id="3">Q: N'y avait-il pas quelque chose de semblable à EthPyramid plus tôt?</h4>
-                                <p>R: Oui, il existe plusieurs variantes de ponzis, de pyramides et d'autres montages financier; EthPyramid est la prochaine étape avec des dividendes réinvestissables et une redistribution de 10% sur la vente.
-
-                                </p>                                    </div>
-                             <div class="sections">
-                                 <h4 id="4">Q: Est-ce que EthPyramid est sécurisé?</h4>
-                                 <p>Oui. Notre équipe de développement consacre beaucoup d'heures a coder et tester pour s'assurer que vos jetons sont sécurisés. Les fonctions internes du contrat ne sont pas accessibles à l'utilisateur final.<p>
-                              </div>
-                             <div class="sections">
-                                <h4 id="5">Q: Qu'est-ce que j'ai besoin de faire pour acheter dans cette Pyramide?</h4>
-                                <p>R: Vous devez installer <a href="https://metamask.io/">Metamask</a> et également acheter de l'éther (ETH), par example depuis Coinbase.</p>
-                             </div>
-                             <div class="sections">
-                                <h4 id="6">Q: Ces jetons sont-ils pré-minée?</h4>
-                                <p>R: Non, il n'y a pas non plus de moyen dans le code qui nous permettent de retirer l'ETH du contrat d'une manière que vous n'êtes pas capable de faire.</p>
-                             </div>
+                                <h4 id="3">P: ¿No había ya algo similar a esto previamente?</h4>
+                                <p>R: Sí, hay varias variaciones de ponzis, pirámides y otros esquemas; EthPyramid es el siguiente paso con dividendos reinvertibles y una redistribución del 10% en ventas. Nuestro equipo (diverso e internacional) ha trabajado día y noche para evitar cualquier bug, error o falla que otros equipos no detectaron en el código del contrato.</p>
+								</div>							 
+							 <div class="sections">
+                                 <h4 id="4">P: Entonces, ¿qué necesito para ayudar a construir esta pirámide?</h4>
+                                 <p>R: Necesitará tener algo de Ethereum en un complemento para navegadores llamado Metamask. Esta aplicación maneja sin problemas las transferencias de su billetera generada al contrato inteligente. Siga las instrucciones en su página web: <a href="https://metamask.io">https://metamask.io/</a>. Hay muchos mercados en donde se puede comprar Ethereum, dependiendo del país donde viva. Algunos mercados populares para transferencias fiat son: Coinbase, Gemini, Quadrigacx, Bittylicious, etc.</p>
+							 </div>
+							 <div class="sections">
+                                 <h4 id="5">P: ¿Entonces definitivamente debería endeudarme con mi tarjeta de crédito para jugar este juego?</h4>
+                                 <p>A: NO. No debes poner nada que no puedas permitirte perder con esto.</p>
+							 </div>
+							 <div class="sections">
+                                 <h4 id="5">P: Entonces, ¿qué garantizan exactamente?</h4>
+                                 <p>A: Nada. De verdad. Aunque haremos nuestro mejor esfuerzo para permitir que la mayor cantidad posible de personas obtenga un beneficio, el riesgo es completamente suyo. Ve con cuidado. ¡Buena suerte y diviértete! Y recuerda, es dinero de monopolio en Internet. No hagas nada por lo que pierdas el sueño (o a tu familia).</p>
+							 </div>
 							 </div>
                 <div id="root"></div>
 
