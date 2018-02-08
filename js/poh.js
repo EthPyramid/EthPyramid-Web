@@ -443,7 +443,7 @@ function updateData(contract) {
         contract.getEtherForTokens(r, function(e, r) {
 	    let bal = convertWeiToEth(r*0.9);
             $(".current-sale .poh-value").text(bal.toFixed(4) + " ETH");
-	    $(".current-sale .usd-value").text("("+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(2) + " " + currency + ")");
+	    $(".current-sale .usd-value").text("("+ (convertWeiToEth(r * 0.9) * ethPrice).toFixed(4) + " " + currency + ")");
 	    if( tokenBalance !== 0 ){
 		    if( bal > tokenBalance ){
                         $(".current-sale .poh-value").addClass('up').removeClass('down');
@@ -465,20 +465,20 @@ function updateData(contract) {
     contract.buyPrice(function(e, r) {
         let buyPrice = (1/(convertWeiToEth(r) * .9)/1000000);
         $('.current-sale .poh-buy').text(buyPrice.toFixed(6) + " ETH");
-		$(".current-sale .usd-buy").text("("+(buyPrice * ethPrice).toFixed(2) + " " + currency + ")");
+		$(".current-sale .usd-buy").text("("+(buyPrice * ethPrice).toFixed(4) + " " + currency + ")");
     })
 
     contract.sellPrice(function(e, r) {
         let sellPrice = convertWeiToEth(r);
         $('.current-sale .poh-sell').text(sellPrice.toFixed(6) + " ETH");
-		$(".current-sale .usd-sell").text("("+(sellPrice * ethPrice).toFixed(2) + " " + currency + ")");
+		$(".current-sale .usd-sell").text("("+(sellPrice * ethPrice).toFixed(4) + " " + currency + ")");
     })
 
     contract.dividends(web3.eth.defaultAccount, function(e, r) {
 	let div = convertWeiToEth(r).toFixed(6);
 
         $('.current-sale .poh-div').text(div + " ETH");
-	$(".current-sale .usd-div").text("("+(convertWeiToEth(r) * ethPrice).toFixed(2) + " " + currency + ")");
+	$(".current-sale .usd-div").text("("+(convertWeiToEth(r) * ethPrice).toFixed(4) + " " + currency + ")");
 
         if( dividendValue != div ){
 		$('.current-sale .poh-div').fadeTo(100, 0.3, function(){ $(this).fadeTo(250, 1.0); });;
