@@ -395,7 +395,7 @@ function convertWeiToEth(e) {
 }
 
 var ethPrice = 0;
-var currency = 'USD';
+var currency = (default_currency === undefined) ? 'USD' : default_currency;
 var timer = null;
 
 function updateEthPrice() {
