@@ -6,7 +6,7 @@
 var quotes = [
 	'Built upon the pyres of our life savings lost to the ether.',
 	'Powered by 1,600 JUST\'d Ethereum.',
-	'What better place to put your childs\' college fund?.',
+	'What better place to put your child\'s college fund?.',
 	'Just like social security. But slightly safer.',
 	'If your money is in here, it can\'t get funneled to ISIS.',
 	'Powered by beautiful, clean coal.',
