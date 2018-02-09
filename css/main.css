@@ -341,6 +341,7 @@ img {
 .header .navigation ul li {
   display: inline-block;
   margin-left: 25px;
+  margin-right: 10px;
 }
 .header .navigation ul li a {
   display: block;
