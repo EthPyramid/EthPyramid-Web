@@ -307,6 +307,13 @@ img {
   background-size: cover;
   background-attachment: fixed;
 }
+.introduction-banner.de {
+	background: url("../images/BG-DE.jpg") no-repeat;
+	  background-position: center center;
+  height:100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .introduction-banner.cn {
 	background: url("../images/BG-CN.jpg") no-repeat;
