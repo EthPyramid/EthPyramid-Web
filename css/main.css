@@ -329,6 +329,7 @@ img {
 .header .logo a {
   display: inline-block;
   line-height: normal;
+  margin-left: 110px;
 }
 .header .logo a img {
   height: 55px;
