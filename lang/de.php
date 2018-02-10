@@ -16,7 +16,7 @@ return [
 		'A <b>self-sustaining</b>, <b>secure</b> and <b>transparent</b> pyramid scheme.' => 'Ein <b>selbsterhaltendes</b>, <b>sicheres</b> und <b>transparentes</b> Pyramidensystem.',
 		'Buy In' => 'Münzen kaufen',
 		'Strong Hands Only' => 'Nur Für eiserne Hände',
-		'The Most Powerful &amp; Decentralized Pyramid Yet' => 'Die momentan Stärkste &amp; dezentralisierte Pyramide',
+		'The Most Powerful & Decentralized Pyramid Yet' => 'Die momentan Stärkste & dezentralisierte Pyramide',
 		'Pyramid Technology' => 'Pyramiden Technologie',
 		'When someone purchases or sells an EthPyramid token (EPY), 10% of the buy/sell price is split by the total number of tokens and given as locked-in dividends (priced in Ether) to all previous buyers based on how many EPY tokens they own.' => 'Wenn jemand EthPyramid Münzen(EPY) kauft oder verkauft werden 10% vom Preis an alle Münzenhalter prozentual in Form von Dividenden verteilt (mehr Münzen=mehr Dividenden). Dividenden sind nicht vom Münzenpreis beeinflusst und werden als Ethereum ausgezahlt.',
 		'Dividends' => 'Dividenden',
