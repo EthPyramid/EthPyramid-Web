@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
-        <div id="app-root">
-            <app-header></app-header>
+        <div id="app-root" :lang="lang.current">
+            {{ lang.current }}
+            <app-header :lang="lang"/>
         </div>
     </body>
 </html>

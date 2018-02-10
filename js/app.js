@@ -7,32 +7,43 @@ head = new Vue({
     data: headData
 });
 
-Vue.component( "lang-select", {
-    props: ['languages'],
-    created: function() {
-        console.log(this.$data);
+Vue.component( 'lang-select', {
+    props: [ 'lang' ],
+    template:
+        '<img :src="icon"></img>\
+        <select @change.passive="select()" :value="lang.current">\
+            <option v-for="option in lang.options">{{ option.code }}</option>\
+        </select>',
+    methods: {
+        select() {
+            this.lang.current = this.$el.value;
+        }
     },
-    template: '<select><option v-for="lang in languages">{{ lang.code }}</option></select>'
+    computed: {
+        icon() {
+            return 'images/' + this.lang.current + '.jpg';
+        }
+    }
 });
 
-Vue.component( "app-header", {
-    template: '<div class="header"><lang-select v-bind:languages="this.languages"></lang-select></div>'
+Vue.component( 'app-header', {
+    props: [ 'lang' ],
+    template: '<div class="header"><lang-select :lang="lang"></lang-select></div>'
 });
 
 
 root = new Vue({
-    el: "#app-root",
+    el: '#app-root',
     data: {
-        languages: [
-            { code: "en" },
-            { code: "au" },
-            { code: "fr" },
-            { code: "de" },
-            { code: "es" }
-        ],
-        currentLanguage: "fr"
-    },
-    updated: function() {
-        console.log("ok");
+        lang: {
+            options: [
+                { code: "UK" },
+                { code: "AU" },
+                { code: "FR" },
+                { code: "DE" },
+                { code: "ES" }
+            ],
+            current: "UK"
+        }
     }
 });
