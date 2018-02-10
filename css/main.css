@@ -294,33 +294,23 @@ img {
   vertical-align: middle;
 }
 .introduction-banner {
-  background: url("../images/BG.jpg") no-repeat;
   background-position: center center;
   height:100%;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-.introduction-banner.au {
-	background: url("../images/BG-AU.jpg") no-repeat;
-	  background-position: center center;
-  height:100%;
-  background-size: cover;
-  background-attachment: fixed;
+.introduction-banner {
+  background-image: url("../images/BG.jpg");
 }
-.introduction-banner.de {
-	background: url("../images/BG-DE.jpg") no-repeat;
-	  background-position: center center;
-  height:100%;
-  background-size: cover;
-  background-attachment: fixed;
+.lang_au .introduction-banner {
+  background-image: url("../images/BG-AU.jpg");
 }
-
-.introduction-banner.cn {
-	background: url("../images/BG-CN.jpg") no-repeat;
-	  background-position: center center;
-  height:100%;
-  background-size: cover;
-  background-attachment: fixed;
+.lang_de .introduction-banner {
+  background-image: url("../images/BG-DE.jpg");
+}
+.lang_cn .introduction-banner {
+  background-image: url("../images/BG-CN.jpg");
 }
 @media screen and (min-width: 768px) and (max-height: 730px){
   .introduction-banner .cta-group{
@@ -1954,6 +1944,9 @@ div#privacy-policy div.content p {
 .faq-main .introduction-banner {
   background-image: none;
   height: auto;
+}
+.faq-main .middle-content {
+  display: none;
 }
 .faq-main .header, .no-background .header {
   background: rgba(59, 81, 93, 0.89);
