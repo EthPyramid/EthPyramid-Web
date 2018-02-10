@@ -113,7 +113,7 @@ include('include/head.php');
                                             </div>
                                             <div class="ContractBalance">
                                                 <span class="period float-left"><a href="#"
-                                                                                   id="chat-toggle">><?php __('Toggle Chat'); ?></a></span>
+                                                                                   id="chat-toggle"><?php __('Toggle Chat'); ?></a></span>
                                                 <span class="period float-right"><?php __('Contract Balance:'); ?> <span
                                                             class="current-distribution-period">0.00</span> ETH</span>
                                             </div>
@@ -143,7 +143,7 @@ include('include/head.php');
                                                 <button id="reinvest-btn-m"
                                                         class='cta'><?php __('Buy With Dividends'); ?></button>
                                                 <div class="line"></div>
-                                                <p><?php __('Swap your dividends for more tokens.'); ?></p>
+                                                <p><?php __('Uses your dividend balance to buy more tokens at the current rate.'); ?></p>
                                             </div>
                                         </li>
                                         <li>
@@ -152,7 +152,7 @@ include('include/head.php');
                                                 <button id="withdraw-btn-m"
                                                         class='cta'><?php __('Withdraw'); ?></button>
                                                 <div class="line"></div>
-                                                <p><?php __('Withdraw your dividends to your Ethereum wallet.'); ?></p>
+                                                <p><?php __('Withdraw your dividends balance back into your Ethereum wallet.'); ?></p>
                                             </div>
                                         </li>
                                     </ul>
@@ -205,7 +205,7 @@ include('include/head.php');
         </div>
     </div>
     <div class="container"
-         style="margin-top:50px; border-bottom: 1px solid white; padding-bottom: 20px; margin-bottom: 40px;">
+         style="margin-top:50px; padding-bottom: 20px; margin-bottom: 40px;">
         <h5 style="color:white;"><?php __('Instructions for those who want to help build the great pyramid of Ether:'); ?></h5>
         <p></p>
         <li><?php __('First of all, install MetaMask <a href="https://metamask.io/">here</a> and put some Ether in it.'); ?></li>
@@ -256,6 +256,9 @@ include('include/head.php');
   }
 </script>
 
+<script type="text/javascript">
+  var default_currency = '<?php echo getDefaultCurrency(); ?>'
+</script>
 <script type="text/javascript" src="js/poh.js"></script>
 
 <?php include('include/foot.php'); ?>

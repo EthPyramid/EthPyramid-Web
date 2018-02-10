@@ -69,7 +69,7 @@ function __($text)
 	}
 	else
 	{
-		if( !in_array( $text ) )
+		if( !in_array( $text, $texts ) )
 			$texts[] = $text;
 
 		echo $text;

@@ -385,8 +385,8 @@ img {
       margin-top: 10px;
 }
 
-.Straya{
-	    -ms-transform: rotate(180deg); /* IE 9 */
+.lang_au .buy-eos img, .lang_au .sticky-header, .lang_au .main-logo-wrapper  {
+	-ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);
 }
@@ -5442,4 +5442,6 @@ _:-ms-fullscreen, :root .modal .modal-body .token-check-condition input[type='ch
   }
 }
 
-
+.whitepaper h2, .whitepaper h3, .whitepaper h4, .whitepaper p {
+  margin: 30px 0;
+}
