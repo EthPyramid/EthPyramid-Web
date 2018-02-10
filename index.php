@@ -5,7 +5,7 @@ include('include/head.php');
 <div class="ep-features-main">
 	<div class="container">
 		<div class="features-description visible-xs">
-			<h2><?php __('The Most Powerful &amp; Decentralized Pyramid Yet'); ?></h2>
+			<h2><?php __('The Most Powerful &amp;amp; Decentralized Pyramid Yet'); ?></h2>
 		</div>
 		<div class="features-box-main">
 			<div class="flex-parent clearfix">
