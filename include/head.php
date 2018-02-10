@@ -71,7 +71,7 @@
 							       target="_blank"><?php __('Smart Contract'); ?></a></li>
 							<li><a href="coins.html"><?php __('My Coins'); ?></a></li>
 							<li><a href="https://blog.ethpyramid.com"><?php __('Blog'); ?></a></li>
-							<li><a href="whitepaper.html" target="_blank"><?php __('Whitepaper'); ?></a></li>
+							<li><a href="whitepaper.html"><?php __('Whitepaper'); ?></a></li>
 						</ul>
 					</div>
 				</div>
