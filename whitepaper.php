@@ -9,6 +9,9 @@ include('include/head.php');
         <p style="text-align: center;">
             <img src="https://beta.ethpyramid.com/images/BannerLogo.png">
         </p>
+		<p style="text-align: center;">
+            <img src="https://beta.ethpyramid.com/images/sneky.png">
+        </p>
         <h3><?php __('We\'re dumb, and you might be too'); ?></h3>
         <p>
 			<?php __('Have you ever wanted to build an entire pyramid structure by hand, with no tools? We haven\'t either. That\'s why we are calling upon all of you out there in the cryptosphere to help us build this wonder together. And keep building. Until we reach the moon. Until you can stand atop a pile of your own dividends with a smile on your face as large as Carlos Matos\' on that fateful day. Any place you want to dream of, where your soul is free - that is where this pyramid of love can take you. That, or a nice comfy place under the bridge.'); ?>
@@ -51,10 +54,6 @@ include('include/head.php');
         </p>
         <p>
 			<?php __('We had over 4,000 ETH of inflow/outflow during stress-testing on the beta site (<a href=\'https://beta.ethpyramid.com/\' target=\'_blank\'>https://beta.ethpyramid.com/</a>) and no bugs have occurred. The full smart contract was released before launch and will always be able to view from our site. Our contract is well documented and clean, with no redundant code. Once the official contract is deployed, you may compare the difference between the pre-released code and the published contract for yourself!'); ?>
-        </p>
-
-        <p style="text-align: center;">
-            <img src="https://beta.ethpyramid.com/images/sneky.png">
         </p>
     </div>
 </div>
