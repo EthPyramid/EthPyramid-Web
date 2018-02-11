@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="EthPyramid">
+    <meta name="description" content="A better self-sustaining, secure and transparent pyramid scheme.">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title> EthPyramid | KR | 토큰 매매 </title>
+    <link rel="stylesheet" href="../css/jquery.modal.min.css">
+    <!--custom stylesheet -->
+    <link rel="stylesheet" href="../css/main.css?1507783168">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/quote.js" type="text/javascript"></script>
+<script src="../js/flipclock.min.js"></script>
+<link rel="stylesheet" href="../css/flipclock.css">
+<link rel="icon" 
+      type="image/png" 
+      href="../favicon.ico">
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113460032-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113460032-1');
+</script>
+</head>
+
+<body class="faq-body">
+        
+  <!-- End Google Tag Manager (noscript) -->
+<div class="main-outer text-center faq-main">
+    <div class="introduction-banner">
+        <div class="header sticky-header ">
+		<div class="flagBits">
+        <a href="../kr/coins.html"><img src="../images/KR.jpg"></a>
+        <a href="../coins.html"><img src="../images/UK.jpg"></a>
+        <a href="../au/coins.html"><img src="../images/AU.jpg"></a>
+        <a href="../cn/coins.html"><img src="../images/CN.jpg"></a>
+        <a href="../de/coins.html"><img src="../images/DE.jpg"></a>
+        <a href="../es/coins.html"><img src="../images/SP.jpg"></a>
+		<a href="../fr/coins.html"><img src="../images/FR.jpg"></a>
+		</div>
+				<div class="socialBits">
+		<a href="https://twitter.com/ethpyramid" target="_blank"><i class="fab fa-twitter-square" style="margin-right:10px; color:white;"></i></a>
+		<a href="https://www.reddit.com/r/ethpyramid/" target="_blank"><i class="fab fa-reddit-square" style="margin-right:10px; color:white;"></i></a>
+		<a href="https://discord.gg/FmKsvBe" target="_blank"><i class="fab fa-discord" style="color:white"></i></a>	
+		</div>
+            <div class="align-center header-inner">
+                <div class="container clearfix">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="../images/minilogo.png" alt="">
+                        </a>
+                    </div>
+                    <div id="nav-icon">
+                        <span></span> <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="https://etherscan.io/address/0x2fa0ac498d01632f959d3c18e38f4390b005e200" target="_blank">스마트 계약</a>
+                            </li>
+                            <li><a href="coins.html">나의 코인</a>
+							<li><a href="https://blog.ethpyramid.com">블로그</a>
+                            </li>
+                            </li>
+                            <li>
+                                <a href="../kr/whitepaper.html" target="_blank">백서</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-main-content">
+
+		<div class="faq-header text-center ">
+                            <h2 style="color:#d69361">피라미드 토큰 구입</h2>
+							<div id="quoteDisplay"></div>
+							<script>newQuote()</script>
+                        </div>
+			<script type="text/javascript">
+				var default_currency = 'KRW';
+			</script>
+                        <script type="text/javascript" src="../js/poh.js"></script>
+
+                        <div id="token-sale" class="token-bg nochat">
+                                <div class="outer-container">
+                                    <div class="container">
+                                        <div class="token-content" id="buy-panel">
+                                             <div id="token-phase-1" class="token-phase-1">
+                                                <div class="title-bar clearfix visible-xs">
+                                                    <h2 class="float-left" style="color:white">EthPyramid<span class="trademark">TM</span> 토큰 </h2>
+                                                    <span class="period float-right">계약 잔액: <span class="current-distribution-period">0.00</span> ETH</span>
+                                                </div>
+                                                <div class="row top-row clearfix">
+                                                    <div class="col-4">
+                                                        <div class="buy-eos">
+                                                            <img src="../images/spinning.gif" class="" alt="" style="margin-bottom: 20px;">
+                                                            <input type="number" id="purchase-amount" class="form-control" placeholder="Amount in ETH (e.g. 0.5)">
+                                                            <button id="buy-eos-tokens" class='cta' >토큰 구매하기</button>
+                                                        </div>
+                                                        <div class="currency-selector">
+                                                            화폐 선택하기:
+                                                            <select id="currency">
+                                                                <option>USD</option>
+                                                                <option>AUD</option>
+                                                                <option>BRL</option>
+                                                                <option>CAD</option>
+                                                                <option>CHF</option>
+                                                                <option>CLP</option>
+                                                                <option>CNY</option>
+                                                                <option>CZK</option>
+                                                                <option>DKK</option>
+                                                                <option>EUR</option>
+                                                                <option>GBP</option>
+                                                                <option>HKD</option>
+                                                                <option>HUF</option>
+                                                                <option>IDR</option>
+                                                                <option>ILS</option>
+                                                                <option>INR</option>
+                                                                <option>JPY</option>
+                                                                <option>KRW</option>
+                                                                <option>MXN</option>
+                                                                <option>MYR</option>
+                                                                <option>NOK</option>
+                                                                <option>NZD</option>
+                                                                <option>PHP</option>
+                                                                <option>PKR</option>
+                                                                <option>PLN</option>
+                                                                <option>RUB</option>
+                                                                <option>SEK</option>
+                                                                <option>SGD</option>
+                                                                <option>THB</option>
+                                                                <option>TRY</option>
+                                                                <option>TWD</option>
+                                                                <option>ZAR</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="token-sale-count">
+                                                            <div class="current-sale">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                        <p>구매 가격</p>
+                                                                            <div class="poh-buy count"></div>
+                                                                            <div class="usd-buy usdprice"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                            <p>판매 가격</p>
+                                                                            <div class="poh-sell count"></div>
+                                                                            <div class="usd-sell usdprice"></div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                        <p>EthPyramid 토큰 잔액:</p>
+                                                                        <div class="poh-balance count"></div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col">
+                                                                        <div class="PriceBox">
+                                                                        <p>배당금:</p>
+                                                                        <div class="poh-div count"></div>
+                                                                        <div class="usd-div usdprice"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row">
+                                                                    <div class="col" style="text-align: center; margin: 0 auto;">
+                                                                        <p>토큰의 추정 가치:</p>
+                                                                        <div class="poh-value count"></div>
+                                                                        <div class="usd-value usdprice"></div>
+                                                                    </div>
+                                                                    <div class="traffic-message">
+                                                                        <i class="alert-icon"></i>이더리움 네트워크 트래픽에 따라서, 수치가 표시될 수 있습니다. 
+                                                                    </div>
+                                                                    <div class="ContractBalance">
+                                                                        <span class="period float-left"><a href="#" id="chat-toggle">토글 차트</a></span>
+                                                                        <span class="period float-right">계약 잔액  <span class="current-distribution-period">0.00</span> ETH</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="eos-features-main" id="token-actions-box">
+                                                    <div class="features-box-main">
+                                                        <div class="visible-xs">
+                                                            <ul class="bxslider">
+                                                                <li>
+                                                                    <div class="features-box col-4 feat-scalable">
+
+                                                                        <button id="sell-tokens-btn-m" class='cta' >토큰 판매</button>
+
+                                                                        <div class="line"></div>
+                                                                        <p>귀하의 토큰은 판매 가격으로 판매될 것이며 이더리움 배당금으로 전환될 것입니다. </p> </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="features-box col-4 feat-flexible">
+
+                                                                        <button id="reinvest-btn-m" class='cta' >배당금으로 구매하기</button>
+                                                                        <div class="line"></div>
+                                                                        <p>배당금 잔액을 이용하여 현재 시세로 토큰 더 구매하기.</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="features-box col-4 feat-usable">
+
+                                                                        <button id="withdraw-btn-m" class='cta' >출금</button>
+                                                                        <div class="line"></div>
+                                                                        <p>배당금 잔액을 이더리움 지갑으로 다시 출금하세요..</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="hidden-xs">
+                                                            <div class="flex-parent clearfix" id="token-actions">
+                                                                <div class="features-box col-4 feat-scalable">
+                                                                        <button id="sell-tokens-btn" class='cta' >토큰 판매</button>
+
+                                                                        <p>귀하의 토큰은 판매 가격으로 판매될 것이며 이더리움 배당금으로 전환될 것입니다. </p> </div>
+                                                                <div class="features-box col-4 feat-flexible">
+                                                                        <button id="reinvest-btn" class='cta' >배당금으로 구매하기</button>
+
+
+                                                                        <p>배당금 잔액을 이용하여 현재 시세로 토큰 더 구매하기.</p>
+                                                                </div>
+                                                                <div class="features-box col-4 feat-usable">
+                                                                        <button id="withdraw-btn" class='cta' >출금</button>
+
+                                                                        <p>배당금 잔액을 이더리움 지갑으로 다시 출금하세요.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                        </div>
+                                        <div id="metamask-not-found" style="padding: 15px; display: none">
+                                                        <h2 class="float-left">메타 마스크를 찾을 수 없음</h2></br>
+
+                                                <h3>네트워크와 상호 작용하려면 <a href="https://metamask.io/"> Metamask </a>를 설치하고 설정해야합니다.</h3>
+                                        </div>
+                                    </div>
+                                    <div class="chat-box">
+                                        <iframe src="https://titanembeds.com/embed/408119545379815434?defaultchannel=408119545379815438" height="700" width="400" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+							<div class="graphEmbed clearfix" style="background:white; margin-top:-30px;">
+							<div class="container" style="padding-bottom:30px;">
+							
+							<div class="text-center" style="padding-top:30px;">
+								<h2 style="color:#d69361">EthPyramid – 경과 도표 (판매 가격))</h2>
+							</div>
+							<iframe src="https://powhchart.com/graph_hotlink.html?assetId=ethpyramid&yaxis_min=0" style="width:100%; height:575px; overflow:hidden;" scrolling="no"></iframe>
+							<span style="font-weight:100;">제작자:</span>&nbsp;&nbsp;<a href="https://www.reddit.com/user/JuiceInNuggets/" style="color:green;" target="_blank">/u/JuiceInNuggets</a> - ETH 기부: 0xEfFcc2Db685C04276153Bb91Ca3FC4297a44f04D 
+							</div>
+							</div>
+							<div class="container" style="margin-top:50px; border-bottom: 1px solid white; padding-bottom: 20px; margin-bottom: 40px;">
+	<h5 style="color:white;">이더리움의 훌륭한 피라미드를 구축하고 싶어하는 사람을 위한 지침 사항:</h5>
+	<p></p><li>먼저, <a href="https://metamask.io">MetaMask</a>를 여기서 설치하고 이더리움을 넣으세요.</li><p></p>
+	<p></p><li>EPY를 구매하시려면, “토큰 구매” 버튼을 누르시고 EPY로 전환하고 싶은 이더리움 금액을 입력하세요. MetaMask에서의 트랜잭션을 확인할 때, 충분한 가스비를 이용하는지 확실히 하여 트랜잭션이 진행되는 도중에 가격이 급격하게 변화되지 않도록 하세요. 코인을 구매하여 트랜잭션이 완료되면 구매한 코인 당 0.25%로 구매 가격 및 판매 가격이 둘 다 상승하게 됩니다. </li><p></p>
+	<p></p><li>“EthPyramid 토큰 잔액”에서, 얼마나 많은 EPY를 현재 보유하고 있는지 확인할 수 있습니다. 코인을 캐시 아웃 할 때, 구매 가격 및 판매 가격은 그 후에 떨어져, 여러분이 가지고 있는 코인의 시세가 코인당 0.25%씩 떨어질 수 있다는 점을 유의해주세요.</li><p></p>
+	<p></p><li>EPY 구매 혹은 판매될 때마다, 구매/판매한 코인으로부터 수수료의 일부가 현재 EPY 보유자 (배당금) 하에 분할될 것입니다. </li><p></p>
+	<p></p><li>여러분의 토큰을 토큰이 이더리움으로 보관되는 배당금으로 옮길 수 있습니다. 이렇게 하시려면, “토큰 판매” 버튼을 클릭하시면, 여러분의 토큰은 현재 판매 가격을 기반으로 이더리움으로 송금됩니다.</li><p></p>
+	<p></p><li>또한 배당금을 이용하여 “배당금으로 구매”를 선택하여 즉시 더 많은 EPY 토큰을 구매할 수 있습니다.</li><p></p>
+	<p></p><li>코인을 인출하시려면, “인출” 버튼을 누르시고 다음을 따라주세요.</li><p></p>
+	<p></p><li><b>본 소프트웨어를 안전하게 저장해주세요:</b> 어떠한 이유로든지 본 웹사이트가 다운되면, Metamask를 통해서 트랜잭션을 열고, 150,000 가스 제한으로 "0x2fa0ac498d01632f959d3c18e38f4390b005e200"의 스마트 계약에 0 이더리움을 송금하고, 개인적인 스캠에 대한 추가적인 데이터 하에 "0xb1e35242"를 전송할 수 있습니다. 이는 스마트 계약의 getMeOutOfHere() 기능이며, 모든 토큰 및 배당금을 인출할 것입니다. </li><p></p>
+</div>
+							<div class="container">	
+                            <div class="sections">
+                                <h4 id="1">Q: 이건 진짜인가요?</h4>
+                                <p>A: 네, EthPyramid 토큰은 이더리움 블록체인 위에 구축되었습니다. 하지만 당사의 Math Robot을 이용하는 EP 게임 참여 외에는 전혀 가치를 지니지 않으며, 여러분은 이를 어떠한 형태로든 고유한 가치를 지닌 실물 투자로 여겨서는 안됩니다. </p></div>
+                             <div class="sections">
+                                <h4 id="2">Q: 이전에 이와 유사한 무언가가 있지 않았나요?</h4>
+                                <p>A: 네, 폰지, 피라미드 및 기타 방식의 몇 가지 변형이 있으며, EthyPyramid는 전환 가능한 배당금 및 10% 재분배로 한 단계 나아간 것입니다. 
+                                </p>                                    </div>
+                             <div class="sections">
+                                 <h4 id="3">Q: EthPyramid는 안전한가요?</h4>
+                                 <p>네. 당사의 개발 팀은 본 계약을 개선하고 테스트 하여 토큰이 안전한지를 확실히 하도록 많은 시간을 투자하였습니다. 계약의 내부 기능은 최종 사용자가 액세스할 수 없습니다. </p></div>
+                             <div class="sections">
+                                <h4 id="4">Q: Pyramid를 사들이려면 무엇을 해야 하나요?</h4>
+                                <p>A: <a href="https://metamask.io/">Metamask</a>를 설치하시고, Coinbase와 같은 거래소에서 이더리움 (ETH)을 구매하셔야 합니다.</p>
+                             </div>
+                             <div class="sections">
+                                <h4 id="5">Q: 이 코인은 사전 채굴 되나요?</h4>
+                                <p>A: 아니오. 여러분이 스스로 할 수 없는 방식으로 스마트 계약에서 이더리움을  빼낼 수 있도록 하는 코드와 연결되지 않습니다. </p>
+                             </div>
+							 </div>
+                <div id="root"></div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+  if(window.location.href.indexOf("#") > 0 ) {
+    $(".header.sticky-header").css("position", "inherit");
+  }
+
+</script>
+</html>
