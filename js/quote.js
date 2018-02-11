@@ -39,6 +39,7 @@ var quotes = [
 	'Let us know if you see a TX for 866 ETH.',
 	'Get rich quick, lose it all even quicker.',
 	'Competitive interest rates.',
+	'Good God, you\'re actually thinking about DOING this?',
 	'Past performance is not indicative of future results.',
 	'Look for our ad in the upcoming edition of Cosmo.',
 	'Stably unstable.',
