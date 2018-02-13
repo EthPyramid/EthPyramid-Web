@@ -441,6 +441,8 @@ function updateData(contract) {
         return
     }
 
+    $('#eth-address').html( web3.eth.defaultAccount );
+
     contract.balanceOf(web3.eth.defaultAccount, function(e, r) {
         $('.current-sale .poh-balance').text((r / 1e18*1000).toFixed(4) + " EPY");
         contract.getEtherForTokens(r, function(e, r) {
