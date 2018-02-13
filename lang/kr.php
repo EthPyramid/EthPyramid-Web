@@ -8,7 +8,7 @@ return [
 	'flag' => 'KR.jpg',
 	'text' => [
 		'EthPyramid' => 'EthPyramid',
-		'A better self-sustaining, secure and transparent pyramid scheme.' => '자립적이며, 안전하고 투명한 피라미드 방식',
+		'A self-sustaining, secure and transparent pyramid scheme.' => '자립적이며, 안전하고 투명한 피라미드 방식',
 		'Smart Contract' => '스마트 계약',
 		'My Coins' => '나의 코인',
 		'Blog' => '블로그',

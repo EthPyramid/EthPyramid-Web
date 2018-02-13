@@ -8,7 +8,7 @@ return [
 	'flag' => 'FR.jpg',
 	'text' => [
 		'EthPyramid' => 'EthPyramid',
-		'A better self-sustaining, secure and transparent pyramid scheme.' => 'Une pyramide sécurisée, transparente et autonome.',
+		'A self-sustaining, secure and transparent pyramid scheme.' => 'Une pyramide sécurisée, transparente et autonome.',
 		'Smart Contract' => 'Smart Contract',
 		'My Coins' => 'Mes Jetons',
 		'Blog' => 'Blog',
