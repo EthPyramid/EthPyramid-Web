@@ -212,12 +212,12 @@ include('include/head.php');
         <p></p>
         <p></p>
         <li>
-			<?php __('To buy EPY, simply click the "Buy Tokens" button and enter the amount of Ether you want to convert to EPY, based on the current Buy Price. When confirming the transaction on MetaMask, be sure to use a high enough gas price so that the price doesn\'t change drastically while the transaction is in progress.	<a href="https://ethgasstation.info/">Here</a> you can view recommended gas prices.	Buying coins will increase both the Buy Price and Sell Price with 0.25% per bought coin once the transaction is complete.'); ?>
+			<?php __('To buy EPY, simply click the "Buy Tokens" button and enter the amount of Ether you want to convert to EPY, based on the current Buy Price. When confirming the transaction on MetaMask, be sure to use a high enough gas price so that the price doesn\'t change drastically while the transaction is in progress.	<a href="https://ethgasstation.info/">Here</a> you can view recommended gas prices.	Buying coins will increase both the Buy Price and Sell Price with 0.2% per bought coin once the transaction is complete.'); ?>
         </li>
         <p></p>
         <p></p>
         <li>
-			<?php __('Under "EthPyramid Token Balance" you can see how many EPY you currently own. Note that when cashing out coins, the Buy Price and Sell Price drop afterwards, decreasing the value of your (and everyone else\'s) coins by 0.25% per coin.'); ?>
+			<?php __('Under "EthPyramid Token Balance" you can see how many EPY you currently own. Note that when cashing out coins, the Buy Price and Sell Price drop afterwards, decreasing the value of your (and everyone else\'s) coins by 0.2% per coin.'); ?>
         </li>
         <p></p>
         <p></p>
